@@ -1,359 +1,321 @@
-*Personal Knowledge Management (PKM) which some might dismiss as just more efficient notetaking and simply better organization of notes, partly because [even a portion of that topic](https://ancientguy.github.io/PKM/2.Areas/00PKMSystems.html) is *worth the effort* to master because of how better note organization and even small gains in proficiency in the development of skills for things like summary automation pays one back quicky over very little time. Part of the payback is in the improvement of how one is aware of how one thinks oneself. *It's not only important to know what one doesn't know, it's important to know something about one's limits in beginning to fathom new waves of information, eg* ***it is vitally important to shut off certain streams of noise entirely*** -- **one needs to understand why certain kinds of noise is so deleterious!**
+# **100-Day Plan: Personal Knowledge Engineering mdBook**
 
-Thus, serious PKM is a gigantic first step toward serious context engineering necessary for full-blown AI-assisted Personal Knowledge Engineering (PKE). PKM and PKE are fundamentally about ACCELERATING the learning of/by AI-assisted knowledge management and engineering systems -- because we are going live in an economy and culture that is characterized by a superabundance of compute. We might be and should be astounded by the capabilities of our supercomputers now, no other form of technology has come close to keeping up with compute ... and none other has increased as long, as consistently for as long ... now we can be quite sure that the long-term trend, since 1900,* **WILL CONTINUE!!! In every five year period, there has been and will continue to be roughly 10X more compute available for every dollar spent**. 
+This document presents a 100-module strategic curriculum for a highly experienced multi-disciplinary systems engineer. It provides a systematic framework to accelerate autodidactic education, understand the details of research at the forefront of technological innovation, foster meaningful new professional connections and friendships across different disciplines, and enhance the capacity to contribute to significant work in extensible open-source technologies. The primary focus is on the journey of **continual learning and meeting new colleagues**, with technology serving as the enabling toolkit rather than the end goal itself.
 
-There's no question any more that this will change things dramatically. ***The real question is how can WE best exploit FOR OURSELVES the full advantage of this compute to accelerate how human systems learn?***  
+The core objective is to transition from the passive practice of *Personal Knowledge Management (PKM)*—the mere collection of random notes—to the active, tech-assisted discipline of *Personal Knowledge Engineering (PKE)*. This plan adopts a **publication-first** methodology. Instead of a private note-taking app, the central artifact is a living, version-controlled technical book built with **mdBook**. This transforms the knowledge base from a static archive into a dynamic, programmable publishing engine, ready for sharing, collaboration, and augmentation with AI. The goal is to accelerate the continuous learning process, spark creative work, and, most importantly, meet new friends by sharing this journey in public.
 
-It's an exciting time to be alive, with almost too much in the way of knowledge management and engineering development happening too rapidly.  
+This plan is built on two foundational philosophies:
 
-Somehow, we have gravitated toward sources like [the Latent Space Pod](https://www.youtube.com/watch?v=_IlTcWciEC4) with [Lance Martin](https://github.com/rlancemartin) of [LangChain](https://python.langchain.com/docs/how_to/tool_calling/) discussing his [training exercises](https://github.com/MarkBruns/open_deep_research_training) for [LangChain's Open Deep Research framework](https://github.com/langchain-ai/open_deep_research), various [AI Engineer videos](https://www.youtube.com/@aiDotEngineer/videos) and especially [Hyung Won Chung's work on how to algorithmically think about incentivization or design-for-more-compute](https://youtu.be/kYWUEV_e2ss), or avoid designing for being constrained by the scale of our current thinking. We need to change the architecture of our LLM implmentations. [Deep Agent applications](https://huggingface.co/spaces/Ayanami0730/DeepResearch-Leaderboard) like ["Langchain Open Deep Research"](https://github.com/langchain-ai/open_deep_research), [“Manus”](https://manus.im/share/I3baB6Ztv92wqAQjLriVvB?replay=1), and [“Claude Code”](https://docs.anthropic.com/en/docs/claude-code/common-workflows) have gotten around this limitation by implementing a combination of four things: a planning tool, sub agents, access to a file system, and a detailed prompt.
+1. **The "Flywheel" Concept:** A continuous, self-reinforcing cycle of **Learn \-\> Synthesize \-\> Create \-\> Share \-\> Connect**. Knowledge is acquired systematically, synthesized into structured chapters, applied to create tangible artifacts, shared publicly through the book to invite dialogue, and leveraged to build a network of peers and friends, which in turn fuels new learning opportunities and friendships.  
+2. **Fail Fast, Learn Faster:** Every project and chapter in this curriculum is an experiment. The goal is not perfection but rapid drafting and learning. We embrace shipping chapters quickly to a trusted circle of beta readers, testing ideas in a "beta production" environment, and using the lessons from accelerated failure analysis to iterate and improve. Speed and the intensity of learning from failure are incessant themes.
 
+### **The 100-Day Personal Knowledge Engineering Curriculum Overview**
 
-# **The 100-Day Architect: A Blueprint for an AI-Augmented Personal Knowledge Management System**
-
-You can, and probably ***should***, use your own preferences and needs for a PKM to develop a better system for you for accomplishing this objective ... the important thing however, is to just get started with some sort of viable 100-day plan and then just steadily work at it. You can tear the plan up and start over after 30 days, but it's important to just get a plan to together that breaks down the work into manageable daily chunks and then get after it. 
-
-## **Introduction: The PKM as a Development Project**
-
-This report outlines a 100-day, 100-module plan for the systematic overhaul and AI-augmentation of a Personal Knowledge Management (PKM) system. The core philosophy of this endeavor is to treat the PKM not as a static repository of notes, but as a dynamic, evolving software project. This approach transforms the act of knowledge management from passive collection into an active process of system architecture, development, and continuous improvement. The 100-day journey is structured as a comprehensive development lifecycle, progressing from foundational infrastructure setup to the implementation of advanced, custom-built, AI-driven features.
-
-The architecture of this system is organized into five distinct phases, each building upon the capabilities established in the previous one. This creates a layered "stack" of functionality, starting with a solid, version-controlled foundation and culminating in a highly intelligent, automated environment for learning and exploration.
-
-A central architectural decision underpins this entire plan: the positioning of the GitHub ecosystem as the core operating system for the PKM. The user's goal to gain experience with GitHub Actions, Issues, Projects, and Discussions is not treated as a separate learning objective but as the strategic foundation for the entire system.1 This unified platform provides the necessary components to manage a complex, multi-tool environment. GitHub Issues will serve as the primary interface for managing the lifecycle of each knowledge topic, from initial idea to completed exploration.3 GitHub Projects will provide the high-level roadmaps and Kanban boards for tracking progress across all learning endeavors.5 Most critically, GitHub Actions will function as the system's central automation engine—its "kernel"—orchestrating every other component, from note processing and AI analysis to the final publication of the knowledge base.1 This integrated approach ensures that all disparate tools work in concert, managed by a single, powerful, and version-controlled platform.
-
-### **Technology Stack and Phased Integration**
-
-The following table provides a strategic overview of the technologies to be integrated throughout this 100-day project. It outlines each component's primary role within the PKM ecosystem and the specific phases during which it will be introduced and mastered. This serves as a high-level roadmap, clarifying not only *what* will be learned, but *when* and *why* it is being introduced into the system architecture.
-
-| Technology | Primary Role | Primary Phases |
-| :---- | :---- | :---- |
-| **GitHub (Repo, Issues, Projects)** | PKM Operating System, Task & Knowledge Lifecycle Management | I, II, IV, V |
-| **GitHub Actions** | Central Automation & CI/CD Engine | I, IV, V |
-| **VSCode** | Primary Development & Note-Authoring Environment | I |
-| **Foam Extension** | Note Creation, Bi-directional Linking, Graph Visualization | I, II |
-| **mdBook** | Static Site Generation & Public Knowledge Base Publishing | I, II, IV |
-| **Python** | Automation Scripting, API Integration, Backend Logic | II, III, IV |
-| **OpenRouter** | Unified AI Gateway for Accessing Multiple LLM Providers | III, IV, V |
-| **Google AI Studio** | Rapid AI Prompt Prototyping & Experimentation | III |
-| **Hugging Face Transformers** | Specialized NLP Models (e.g., Summarization) | III |
-| **Ollama** | Local, Private Large Language Model (LLM) Inference | IV, V |
-| **Docker** | Containerization for Reproducible Environments & Services | IV |
-| **Rust** | High-Performance Custom Tooling & System Utilities | V |
-| **Modular Platform (Mojo, MAX)** | High-Performance AI Inference & Programming Exploration | V |
-
----
-
-## **Phase I: The Developer's Knowledge Foundation (Modules 1-20)**
-
-*Focus: Establishing a rock-solid, automated foundation for the PKM. This phase is about building the "scaffolding" and the core "DevOps" pipeline for your knowledge.*
-
-### **Modules 1-5: Project Scaffolding with GitHub**
-
-The initial modules focus on establishing the project's central repository, which will serve as the single source of truth for all knowledge, code, and configuration. This is the foundational step in treating the PKM as a formal development project.
-
-1. **Repository Creation and Initialization:** A new private repository will be created on GitHub. This repository will house the entire PKM system, including Markdown notes, automation scripts, configuration files, and the mdBook source. Initializing the repository with a README.md file, a .gitignore file (configured for Python, Node.js, and Rust build artifacts), and a clear directory structure (/notes, /scripts, /book\_src) is the first task.  
-2. **GitHub Projects for Meta-Tracking:** Before managing knowledge topics, the system must manage itself. A GitHub Project will be created to track the progress of this 100-day plan.5 This project will be configured with a Kanban board layout, with columns such as "To Do," "In Progress," and "Done".2 This provides immediate, practical experience with the project management tools that will later be applied to learning topics.  
-3. **Structuring the 100-Day Plan as GitHub Issues:** Each of the 100 modules in this plan will be created as a distinct GitHub Issue.3 This modularizes the work and allows for detailed tracking. Using GitHub's issue creation features, each module can be documented, discussed, and managed individually.2  
-4. **Custom Fields and Project Views:** The GitHub Project will be enhanced with custom fields to add rich metadata to each module's Issue. Fields such as "Phase" (e.g., "I: Foundation"), "Status" (e.g., "Not Started"), and "Technology" (e.g., "GitHub Actions") will be created.3 This allows for the creation of powerful, filtered views, such as a roadmap layout to visualize the timeline or a table view to group modules by technology.2  
-5. **Establishing Branching Strategy and Workflow:** A simple Git branching strategy, such as GitFlow or a main-branch workflow, will be established. All work will be done on feature branches and merged into the main branch via pull requests. This enforces good version control hygiene from the outset and prepares the project for automated checks and workflows that trigger on pull requests.3
-
-### **Modules 6-10: Mastering the VSCode \+ Foam Environment**
-
-With the repository structured, the focus shifts to configuring the local development and note-taking environment. VSCode, augmented with the Foam extension, provides a powerful, free, and open-source platform for creating and navigating a graph-based knowledge base.8
-
-6. **VSCode and Foam Workspace Setup:** The process begins by cloning the newly created GitHub repository to a local machine. Following the official Foam documentation, the foam-template project will be used to scaffold the necessary workspace configuration within the repository.8 This involves setting up the  
-   .vscode/settings.json and .vscode/extensions.json files, which define the workspace's behavior and recommend essential extensions.8  
-7. **Core Foam Features \- Linking and Graphing:** This module is a deep dive into Foam's core functionality. The focus will be on creating atomic notes—single files dedicated to a single topic—and connecting them using \[\[wikilinks\]\].9 Practical exercises will involve creating a few sample notes and linking them to observe how the knowledge graph is built. The  
-   Foam: Show Graph command will be used to visualize these connections, providing a tangible representation of the relationships between ideas.9  
-8. **Navigation and Discovery with Backlinks:** Understanding connections is a two-way street. This module will explore Foam's backlinking capabilities. The Backlinks Panel will be used to see which other notes reference the currently active note, providing crucial context and aiding in the discovery of emergent themes and relationships within the knowledge base.9  
-9. **Installation and Review of Recommended Extensions:** The foam-template recommends a set of VSCode extensions to enhance the Markdown editing experience.8 This module involves installing and reviewing this list, which typically includes tools like  
-   Markdown All In One, Prettier for formatting, and extensions for Mermaid diagrams and emoji support.12 Understanding the role of each extension is key to customizing the environment for maximum productivity.  
-10. **Customizing VSCode Settings:** The default Foam settings provide a great starting point, but personalization is key. This module involves editing the .vscode/settings.json file to tweak the user experience. This could include changing editor fonts, setting rulers for line length, or customizing how wikilinks are rendered in the editor, ensuring the environment is perfectly tailored to the user's workflow.8
-
-### **Modules 11-15: mdBook Configuration and Initial Build**
-
-The next step is to configure mdBook, the Rust-based tool that will transform the collection of Markdown notes into a clean, searchable, and publishable static website.14
-
-11. **Installing mdBook and Initializing the Book:** mdBook will be installed using Rust's package manager, Cargo. Once installed, the mdbook init command will be run within the /book\_src directory of the repository. This command creates the initial file structure for the book, including the src directory for content and the all-important SUMMARY.md file, which defines the book's navigation structure.14  
-12. **Configuring book.toml:** The book.toml file is the heart of an mdBook project's configuration. This module involves a thorough exploration of its key options.15 The book's title and author will be set, and the HTML renderer options will be configured. This includes enabling or disabling section labels, adding a link to the source GitHub repository, and selecting a default theme.15  
-13. **Structuring the SUMMARY.md:** The SUMMARY.md file dictates the table of contents and navigation hierarchy of the final website. This module will focus on understanding its syntax. A basic structure will be created, linking to the sample notes created in the Foam modules. This establishes the initial organization of the public-facing knowledge base.  
-14. **Enabling and Configuring Search:** One of mdBook's most powerful features is its built-in, client-side search functionality. In the book.toml file, the search feature will be explicitly enabled and configured.15 Options like  
-    limit-results, use-boolean-and, and boost-title will be explored to understand how to fine-tune the search experience for users of the knowledge base.15  
-15. **Performing the First Manual Build:** With the initial configuration in place, the mdbook build command will be run from the command line. This compiles the Markdown files from the src directory into a static HTML site in a new /book directory. The resulting site will be opened locally in a browser to verify that the configuration is correct, the links work as expected, and the overall structure is sound. This manual build serves as the baseline for the automated pipeline to come.16
-
-### **Modules 16-20: The First Automated CI/CD Pipeline**
-
-This is the capstone of Phase I, where the manual processes of building and deploying are automated using GitHub Actions. This creates a Continuous Integration/Continuous Deployment (CI/CD) pipeline that ensures the published knowledge base is always in sync with the latest notes.17
-
-16. **Creating the First Workflow File:** A new workflow file will be created at .github/workflows/deploy-book.yml. This YAML file will define the automation steps. The workflow will be configured to trigger on a push event to the main branch, meaning it will run automatically every time new changes are committed.16  
-17. **Configuring the GitHub Actions Job:** The workflow will contain a single job, build-and-deploy. This job will be configured to run on an ubuntu-latest runner. The first steps within the job will be to use the actions/checkout action to check out the repository's code onto the runner.17  
-18. **Installing mdBook on the Runner:** To build the book, mdBook must be available on the CI runner. The most efficient method is to download a pre-compiled binary from the GitHub Releases page, which is fast and avoids the need to install the entire Rust toolchain.16 A workflow step will use  
-    curl to download and extract the mdBook executable.16  
-19. **Building and Deploying to GitHub Pages:** The core of the workflow involves two steps. First, a step will run the mdbook build command, generating the static site in the /book directory. Second, a community action like peaceiris/actions-gh-pages will be used to deploy the contents of the /book directory to a special gh-pages branch in the repository.18 Repository settings will be configured to enable GitHub Pages and set the  
-    gh-pages branch as the deployment source.19  
-20. **Identifying the "Impedance Mismatch" and a Manual Workaround:** Upon the first successful deployment, a critical challenge will become apparent. The \[\[wikilinks\]\] used for fluid navigation within Foam and VSCode are not standard Markdown links and will be broken in the final mdBook output.8 This "impedance mismatch" between the authoring environment and the publishing tool is a central technical hurdle of the chosen stack. Foam provides a command,  
-    Foam: Create markdown references for \[\[wikilinks\]\], which converts these links into a format that mdBook can understand.9 This module concludes by documenting this issue and establishing the manual execution of this command as a temporary workaround. This deliberate identification of a problem creates a clear and compelling motivation for developing a more sophisticated, automated scripting solution in later phases, transforming a potential frustration into a core learning objective of the 100-day plan.
-
----
-
-## **Phase II: Architecting the Knowledge Graph (Modules 21-40)**
-
-*Focus: Developing a systematic approach to knowledge capture, organization, and presentation. This phase moves from "getting the tools to work" to "using the tools effectively."*
-
-### **Modules 21-25: Knowledge Ingestion Framework**
-
-With the foundational infrastructure in place, the focus now shifts to establishing a structured process for exploring the 150 bucket-list topics. This involves leveraging GitHub's project management tools to create a systematic knowledge ingestion pipeline.
-
-21. **Creating the "Topic Exploration" Project Board:** A new GitHub Project will be created specifically for managing the 150 learning topics. This project will be configured as a Kanban board, providing a visual workflow for tracking topics as they move from idea to exploration.2  
-22. **Designing a Standardized Issue Template for Topics:** To ensure consistency, a GitHub Issue template will be designed for new topics. This template, stored as a Markdown file in the .github/ISSUE\_TEMPLATE directory, will pre-populate new issues with a standardized structure.3 Sections will include "Topic Summary," "Key Questions to Answer," "Initial Resources," and "Potential Connections," guiding the initial phase of research for any new subject.  
-23. **Populating the Backlog with Initial Topics:** As a practical exercise, the first 10-15 topics from the user-provided list of 150 will be created as new Issues using the template designed in the previous module. These issues will form the initial "backlog" in the "Topic Exploration" project board.3  
-24. **Using Custom Fields for Topic Metadata:** The project board will be enhanced with custom fields tailored for knowledge exploration. Fields like "Topic Category" (e.g., "Technology," "History," "Science"), "Priority" (e.g., "High," "Medium," "Low"), and "Status" (e.g., "Backlog," "Researching," "Synthesizing," "Published") will be added to provide richer metadata for each topic.5  
-25. **Linking Issues to a Milestone:** To group related learning goals, a GitHub Milestone will be created, for example, "Q3 Learning Goals." A subset of the topic issues will be assigned to this milestone. This introduces another layer of organization, allowing for tracking progress against larger, time-bound objectives.2
-
-### **Modules 26-30: Advanced Foam Techniques**
-
-This section moves beyond the basics of Foam to leverage its more powerful features for structuring and maintaining a high-quality knowledge graph.9
-
-26. **Creating and Using Note Templates:** To standardize the format of different types of notes, Foam's template feature will be implemented. Templates for various knowledge artifacts—such as book summaries, biographies, project overviews, or technology explainers—will be created. Using the Foam: Create New Note from Template command will then become the standard workflow, ensuring consistency and reducing repetitive work.9  
-27. **Mastering the Tag Explorer and Hierarchical Tags:** Tags are a crucial tool for non-hierarchical organization. This module focuses on using the Tag Explorer panel to navigate the knowledge base. A tagging convention will be established, and the power of hierarchical tags (e.g., \#tech/python/automation) will be explored to create more granular and organized connections between notes.9  
-28. **Managing Orphans and Placeholders:** A healthy knowledge graph is a connected one. This module addresses graph maintenance by focusing on the "Orphans" and "Placeholders" panels in Foam.9 Orphans (notes with no links) and Placeholders (links to non-existent notes) will be regularly reviewed. A workflow will be established to either integrate orphaned notes into the graph or create new notes for placeholders, ensuring the knowledge base remains coherent and interconnected.10  
-29. **Embedding Note Content:** To create composite documents and avoid content duplication, Foam's note embedding feature (\!\[\[note-name\]\]) will be utilized. This allows the content of one note to be dynamically included within another. This is particularly useful for creating "Maps of Content" (MOCs) or summary pages that pull in information from multiple atomic notes.9  
-30. **Leveraging Section Linking and Aliases:** For more precise connections, linking to specific sections within a note (\]) will be practiced.9 Additionally, link aliasing (  
-    \[\[note-name|custom display text\]\]) will be used to make links more readable and context-friendly within the body of a note, improving the overall narrative flow of the written content.9
-
-### **Modules 31-35: Python for PKM \- The First Scripts**
-
-This section marks the introduction of custom automation with Python. The initial scripts will focus on automating common maintenance and organization tasks within the knowledge base, demonstrating the power of scripting to manage the PKM at scale.21
-
-31. **Setting Up the Python Environment:** A local Python development environment will be configured. This includes installing a recent version of Python and using a virtual environment manager like venv to isolate project dependencies. The first script will be a simple "hello world" to verify the setup.  
-32. **Script 1: File Organizer based on Frontmatter:** The first practical script will be a file organizer. This Python script will iterate through all Markdown files in the /notes directory. It will parse the YAML frontmatter of each file to read metadata (e.g., category: 'Technology'). Based on this metadata, the script will automatically move the file into a corresponding subdirectory (e.g., /notes/technology/). This automates a tedious organization task and introduces file system operations with Python's os module.22  
-33. **Script 2: Batch Tagging Utility:** Building on the previous script, a batch tagging utility will be created. This script will take a directory and a tag as command-line arguments. It will then scan all files in that directory and append the specified tag to their frontmatter tag list. This is useful for applying a new project tag or category to a group of existing notes simultaneously.21  
-34. **Reading and Consolidating Notes:** A script will be developed to demonstrate content processing. This script will read multiple text files (e.g., daily log files named YYYY-MM-DD.md) and consolidate their content into a single weekly or monthly summary file. This introduces file reading and writing operations and is a foundational step for more complex content analysis later on.21  
-35. **Integrating Scripts with the Command Line:** The scripts will be enhanced to be more user-friendly by using Python's argparse module to handle command-line arguments. This makes them more flexible and reusable, transforming them from simple scripts into proper command-line tools for PKM management.
-
-### **Modules 36-40: Enhancing mdBook Presentation**
-
-The final part of this phase focuses on customizing the appearance and functionality of the public-facing mdBook site, ensuring it is not just a repository of information but a polished and professional presentation of knowledge.
-
-36. **Creating a Custom Theme:** While mdBook comes with default themes, creating a custom look is essential for personalization. This module involves creating a theme directory and adding custom CSS files to override the default styles. This could involve changing colors, fonts, and layout to match a personal aesthetic.15  
-37. **Adding Custom JavaScript for Interactivity:** To add dynamic behavior, custom JavaScript files will be integrated. This could be used for simple enhancements like adding a "back to top" button, or more complex features like integrating an external analytics service or adding interactive UI elements.15  
-38. **Integrating Preprocessors for Rich Content:** mdBook's functionality can be extended with preprocessors. This module will explore adding support for features not natively included in Markdown. For example, the mdbook-mermaid preprocessor will be configured to allow for the rendering of Mermaid.js diagrams and flowcharts directly from code blocks, and MathJax support will be enabled for rendering complex mathematical equations.15  
-39. **Configuring a Professional Deployment:** To ensure the deployed site functions correctly, especially with custom domains or subdirectories, the site-url option in book.toml will be properly configured. This is crucial for ensuring that links, CSS, and JavaScript files load correctly on the live server.16  
-40. **Customizing the 404 Error Page:** A professional site needs a helpful error page. A custom 404.md file will be created in the src directory. mdBook will automatically convert this into a 404.html page that provides better navigation and user experience for visitors who encounter a broken link, which is a significant improvement over a generic server error.16
-
----
-
-## **Phase III: AI Augmentation \- The Intelligent Assistant (Modules 41-60)**
-
-*Focus: Integrating a multi-tiered AI strategy to automate content processing and generate new insights. This is the core "AI-ification" phase.*
-
-### **Modules 41-45: AI Gateway Setup \- OpenRouter & Google AI Studio**
-
-This section lays the groundwork for all future AI integration by setting up access to powerful, flexible AI models through API gateways. This approach provides access to a wide variety of models without being locked into a single provider.
-
-41. **Creating an OpenRouter Account:** OpenRouter serves as a unified API gateway to hundreds of AI models from various providers like Anthropic, Google, and Meta.23 An account will be created, and the dashboard will be explored to understand its features, including model availability, pricing, and usage tracking.24  
-42. **Generating and Securing API Keys:** An API key will be generated from the OpenRouter dashboard. To maintain security best practices, this key will not be hard-coded into any scripts. Instead, it will be stored as an encrypted "secret" in the GitHub repository settings.1 This allows GitHub Actions workflows to securely access the key at runtime without exposing it in the codebase.  
-43. **Introduction to Google AI Studio:** Google AI Studio is a web-based tool for rapidly prototyping prompts and experimenting with Google's Gemini family of models.26 It provides an intuitive interface for testing different prompting strategies without writing any code, making it an ideal environment for initial exploration and "vibe coding".26  
-44. **Prototyping PKM Prompts in AI Studio:** Using Google AI Studio, several prompts tailored for PKM tasks will be developed and tested. This includes crafting system prompts for an AI assistant that can summarize long articles, extract key entities (people, places, concepts), generate a list of questions about a topic, or rephrase complex text into simpler terms. The iterative nature of the AI Studio playground allows for quick refinement of these prompts.28  
-45. **Understanding API Quotas and Billing:** A crucial part of using cloud-based AI is managing costs. This module involves reviewing the billing and quota systems for both OpenRouter and Google AI. A budget will be set, and the prepaid credit system of OpenRouter will be explored as a way to control spending.23 Understanding the per-token pricing for different models is essential for making cost-effective choices later on.24
-
-### **Modules 46-50: Your First AI-Powered Python Script**
-
-With API access established, the next step is to bring AI capabilities into the local development environment through Python scripting.
-
-46. **Setting up the Python Environment for API Calls:** The Python environment will be prepared by installing necessary libraries, such as requests for making HTTP calls or a provider-specific SDK like openai which is compatible with the OpenRouter API endpoint.23  
-47. Script 3: The AI Summarizer: The first AI-powered script will be a text summarizer. This Python script will:  
-    a. Read the content of a specified Markdown file from the /notes directory.  
-    b. Construct a prompt using the text content.  
-    c. Make a POST request to the OpenRouter API endpoint (/api/v1/chat/completions), passing the prompt and selecting a powerful general-purpose model like anthropic/claude-3.5-sonnet or meta-llama/llama-3.1-405b-instruct.24
-
-    d. Parse the JSON response to extract the generated summary.  
-    e. Print the summary to the console.  
-48. **Handling API Keys and Responses in Python:** The summarizer script will be refactored to securely access the API key from an environment variable rather than hard-coding it. Error handling will also be added to gracefully manage potential API issues, such as network errors, authentication failures, or rate limiting.30  
-49. **Writing Summaries Back to Files:** The script will be enhanced to be more useful. Instead of just printing the summary, it will be modified to write the summary back into the original Markdown file. A good practice is to add it to the YAML frontmatter under a summary: key or in a dedicated \#\# AI Summary section at the end of the file.  
-50. **Exploring OpenRouter Parameters:** The OpenRouter API offers numerous parameters to control model behavior, such as temperature, max\_tokens, and top\_p.30 This module involves experimenting with these parameters in the Python script to observe their effect on the quality, length, and creativity of the generated summaries, allowing for fine-tuning of the AI's output.
-
-### **Modules 51-55: Specialized Models with Hugging Face**
-
-While API gateways are excellent for general-purpose tasks, some tasks benefit from specialized, fine-tuned models. Hugging Face is the leading platform for accessing these models.32
-
-51. **Introduction to the Hugging Face Hub and Transformers Library:** This module provides an overview of the Hugging Face ecosystem. The Hugging Face Hub will be explored to find models specifically fine-tuned for summarization. The transformers Python library, which provides a high-level API for using these models, will be installed.32  
-52. **Implementing the Summarization Pipeline:** The transformers library offers a pipeline abstraction that simplifies the process of using a model for a specific task.34 A new Python script will be created that initializes a  
-    summarization pipeline, specifying a well-regarded model like facebook/bart-large-cnn.32  
-53. **Script 4: Hugging Face Summarizer:** This script will use the initialized pipeline to summarize a piece of text. The code is often simpler than a direct API call:  
-    Python  
-    from transformers import pipeline
-
-    \# Load the summarization pipeline with a specific model  
-    summarizer \= pipeline("summarization", model="facebook/bart-large-cnn")
-
-    ARTICLE \= """ Your long text content here... """  
-    summary \= summarizer(ARTICLE, max\_length=150, min\_length=40, do\_sample=False)  
-    print(summary)
-
-    This script will be tested on the same notes used in the OpenRouter module to compare results.32  
-54. **Comparing General vs. Specialized Models:** This module involves a qualitative analysis comparing the summaries generated by the general-purpose model via OpenRouter and the specialized BART model from Hugging Face. The comparison will focus on aspects like factual accuracy, coherence, conciseness, and relevance to the source text. This provides a practical understanding of the trade-offs between using large, general models and smaller, task-specific ones.  
-55. **Integrating Hugging Face into the Workflow:** The Hugging Face summarizer script will be integrated into the existing PKM workflow. It will be adapted to read from and write to files, just like the OpenRouter script, making it a viable alternative for the summarization task within the broader system.
-
-### **Modules 56-60: Developing a Tiered AI Strategy**
-
-This section synthesizes the experiences from the previous modules into a coherent, strategic framework for using AI. Instead of treating each AI service as an isolated tool, the system will be designed to use them as a portfolio of resources, deployed intelligently based on the task's requirements.
-
-56. **Defining the Tiers: Cost, Speed, Privacy, Capability:** The AI resources available (OpenRouter, Hugging Face, and soon, local models via Ollama) will be categorized into tiers. For example:  
-    * **Tier 1 (Local/Fast):** Local Ollama models for low-cost, private, and fast tasks like simple text formatting or brainstorming.  
-    * **Tier 2 (Specialized/Efficient):** Hugging Face models for specific, well-defined tasks like summarization where a fine-tuned model excels.  
-    * **Tier 3 (Powerful/Cloud):** State-of-the-art models via OpenRouter for complex reasoning, high-quality content generation, or tasks requiring the largest context windows.  
-57. **Building a Python "Router" Function:** A Python function or class will be created to encapsulate this tiered logic. This AIManager will have a method like process\_text(task\_type, text, priority). Based on the task\_type (e.g., 'summarize', 'generate\_questions') and priority, this function will decide which AI service and model to call.  
-58. **Implementing the Routing Logic:** The AIManager will be implemented. For a 'summarize' task, it might default to the Hugging Face pipeline. For a 'brainstorm' task, it might use a local Ollama model. For a high-priority 'analyze\_complex\_document' task, it would route the request to a top-tier model through OpenRouter. This elevates the system from making simple API calls to making intelligent, resource-aware decisions.  
-59. **Creating a Reusable AI Toolkit:** The AIManager and its related functions will be organized into a reusable Python module within the /scripts directory. This toolkit will be imported by all future automation scripts, ensuring that the tiered AI strategy is applied consistently across the entire PKM system.  
-60. **Formalizing the Model Selection Framework:** The decision-making logic will be documented in a table. This framework serves as a quick reference for choosing the right tool for any given knowledge work task, moving from a reactive "what can this model do?" mindset to a proactive "what is the best model for this job?" approach.
-
-| Task | Recommended Model(s) / Platform | Rationale | Tier |
+| Phase | Module Range | Core Objective | Key Deliverables |
 | :---- | :---- | :---- | :---- |
-| **Quick Drafting & Brainstorming** | ollama/llama3 or ollama/phi-2 | Local, fast, private, and no cost per token. Ideal for iterative and creative tasks. | 1 (Local) |
-| **High-Quality Summarization** | Hugging Face (facebook/bart-large-cnn) | Fine-tuned specifically for summarization, providing concise and factually accurate output. | 2 (Specialized) |
-| **Fact Extraction & Data Structuring** | OpenRouter (google/gemini-2.5-pro) | Excellent at following complex instructions and outputting structured data like JSON. | 3 (Cloud) |
-| **Complex Reasoning & Analysis** | OpenRouter (anthropic/claude-3.5-sonnet) | Top-tier reasoning capabilities and large context window for analyzing dense documents. | 3 (Cloud) |
-| **Creative Writing & Rephrasing** | OpenRouter (mistralai/mistral-large) | Known for its strong performance in creative and stylistic writing tasks. | 3 (Cloud) |
+| **Phase 1: Foundation & Systems Architecture** | Modules 1-20 | To design and build the core infrastructure of the PKES around a publication-first, mdBook-centric workflow. | A fully configured mdBook project serving as a "personal library"; automated content pipelines; a public-facing professional identity hub. |
+| **Phase 2: Horizon Scanning & Deep Learning** | Modules 21-50 | To systematically identify, compare, and learn emerging technologies relevant to personal and professional goals through hands-on, failure-tolerant projects documented as book chapters. | An automated tech-trend dashboard; deep-dive projects in selected domains (e.g., Generative AI, Neuromorphic Computing); refreshed mathematical foundations. |
+| **Phase 3: Creation & Contribution** | Modules 51-80 | To translate learned knowledge into tangible public artifacts and contribute to the open-source community, using creation as a vehicle for connection. | Multiple open-source project contributions; a portfolio of projects on GitHub; published models on Hugging Face; a series of technical tutorials published in the book. |
+| **Phase 4: Connection & Synthesis** | Modules 81-100 | To leverage the published book and other artifacts for networking, establish thought leadership, and synthesize career experience into high-value knowledge products that foster community. | A targeted networking strategy; a personal CRM built as an mdBook extension; a plan for an online tech discussion group; tools for tracking professional opportunities. |
+
+By completing this curriculum, the engineer will have constructed not just a personal knowledge base, but a comprehensive, sustainable system for lifelong autodidactic learning, professional relevance, and building a rich network of friends and collaborators, all centered around the creation of a personal, living technical library.
+
+## **Phase 1: Foundation & Systems Architecture (Modules 1-20)**
+
+**Objective:** To design and build the core technical and philosophical infrastructure of the Personal Knowledge Engineering System. This phase focuses on creating a robust, extensible, and future-proof "personal library" using mdBook, which will serve as the central hub for all subsequent learning, creation, and networking activities. The architectural choices made here are paramount, prioritizing open standards, data ownership, and extensibility to create a system that is not merely used, but can be actively developed and customized over time.
+
+### **Module 1: Defining the Philosophy \- From PKM to PKE**
+
+* **Tasks:** The initial step is to establish a guiding philosophy. This involves reading and synthesizing seminal texts on modern knowledge work. Critically analyze the distinction between methodologies focused on *resource management*, such as Tiago Forte's *Building a Second Brain* (BASB), which excels at organizing information for project-based work, and those focused on *idea generation*, like Niklas Luhmann's *Zettelkasten Method* (ZKM), which is a system for working with ideas themselves.\[1\] The BASB approach is explicitly project-oriented, speaking the "language of action," while the ZKM is project-agnostic, speaking the "language of knowledge".\[1\] Draft a personal "Knowledge Engineering Manifesto" that codifies the principles for this 100-day endeavor. This document should outline primary goals (e.g., "Learn a new technology stack and meet three new developers through a shared project"), core principles (e.g., "Default to learning in public," "Bias for action and rapid failure over perfect planning," "Prioritize connections over collections"), and success metrics (e.g., "Publish one new chapter per month," "Initiate three 'coffee chat' conversations with new contacts").  
+* **Deliverable:** A MANIFESTO.md file, which will serve as the first chapter of the new mdBook project. This document serves as the strategic charter for the entire system.
+
+### **Module 2: Architecting the Personal Library**
+
+* **Tasks:** Design the foundational information architecture for your mdBook project. Instead of a freeform network, mdBook encourages a structured, hierarchical approach from the outset. Use the P.A.R.A. method (Projects, Areas, Resources, Archive) as a conceptual guide to organize the top-level chapters and sections within your book's src directory. For example, create main sections for Areas (long-term interests like "AI Engineering") and Projects (short-term efforts). The Zettelkasten concept of atomic notes can be adapted; each self-contained idea or piece of research becomes a .md page within the book's structure, linked hierarchically in the SUMMARY.md file.  
+* **Deliverable:** A defined folder structure within the mdBook's src directory and a METHODOLOGY.md chapter. This document will detail the rules for creating new pages, the strategy for structuring chapters, and the lifecycle of information as it moves from a rough draft to a published chapter.
+
+### **Module 3: Tool Selection & Core Setup \- mdBook as the Core**
+
+* **Tasks:** Install Rust and mdBook. Initialize a new book project which will become your central PKES. Familiarize yourself with the core components: the book.toml configuration file, the src directory for Markdown content, and the SUMMARY.md file that defines the book's structure. This "publication-first" approach aligns with the goal of moving directly from notes to a shareable format. As part of this module, create an ARCHITECTURE\_ROADMAP.md chapter to brainstorm future extensions, such as building custom Rust-based preprocessors for mdBook to add new features (e.g., special syntax for callouts, dynamic content generation) or exploring high-performance stacks like **Modular's Mojo/Max platform** for future AI integrations.  
+* **Deliverable:** A functional mdBook project, version-controlled with a private GitHub repository, and an ARCHITECTURE\_ROADMAP.md chapter outlining future development paths for the PKES itself.
+
+### **Module 4: Automating Capture \- The Editorial Funnel**
+
+* **Tasks:** Engineer a pipeline to capture external information for potential inclusion in your book. Since mdBook lacks a direct clipper plugin ecosystem, the workflow will be more deliberate. Create a separate inbox directory outside the mdBook src folder. Configure tools like an RSS reader (e.g., Feedly) with IFTTT/Zapier or custom scripts to automatically save interesting articles, paper abstracts, or email newsletters as raw Markdown files into this inbox. This creates an "editorial funnel." The manual process of reviewing these drafts, refining them, and then consciously moving them into the src directory and adding them to SUMMARY.md becomes a key part of the engineering process, ensuring only curated content makes it into the final publication.  
+* **Deliverable:** An automated information capture pipeline that centralizes external content into a dedicated inbox folder, ready for editorial review and integration into the main mdBook project.
+
+### **Modules 5-6: Building the Public Face \- The Professional Hub**
+
+* **Tasks:**  
+  * **Day 5 (GitHub):** Treat the GitHub profile as a professional landing page. Overhaul the profile README.md to be a dynamic "brag document".\[10\] Create distinct sections: "Current Focus," "Core Competencies," "Open Source Contributions," and "Let's Connect." Link prominently to your mdBook (once public), LinkedIn, and Hugging Face profile.  
+  * **Day 6 (Hugging Face):** Establish a professional presence on Hugging Face.\[12\] Create a profile mirroring the branding on GitHub. Explore Models, Datasets, and Spaces. Create a placeholder "Space" to demystify the deployment process.\[13\]  
+* **Deliverable:** Interconnected, professional profiles on GitHub and Hugging Face that serve as the primary public interfaces for the knowledge and artifacts generated by the PKES.
+
+### **Modules 7-10: The AI-Powered Research Assistant**
+
+* **Tasks:**  
+  * **Day 7 (arXiv & Alerting):** Systematize research monitoring. Use tools like ArXiv Sanity Preserver or a Python script for keyword alerts (e.g., "agentic AI," "neuromorphic computing").\[14, 15\] Configure these alerts to be saved into your inbox directory from Module 4\.  
+  * **Day 8 (AI Summarization):** Build a summarization tool with an LLM API (e.g., Gemini). Write a Python script that processes a URL or PDF, extracts key sections, and generates a concise summary in Markdown format, ready to be moved into your book.  
+  * **Day 9 (Papers with Code Integration):** Automate tracking state-of-the-art advancements. Use the Papers With Code API to write a script that generates a weekly digest of trending papers in your field as a new Markdown file in your inbox.\[16\]  
+  * **Day 10 (Building the Research Dashboard):** Create a Research Dashboard.md chapter in your mdBook. Since there's no dynamic plugin like Dataview, write a simple Python or shell script that scans your inbox directory for new files or files with a \#summarize tag in their frontmatter, and generates a summary list. This script can be run manually to update the dashboard page.  
+* **Deliverable:** A semi-automated system for identifying, capturing, summarizing, and tracking relevant scientific literature, feeding a structured editorial pipeline for your knowledge book.
+
+### **Modules 11-15: Skill Refreshment & Foundational Tooling**
+
+* **Tasks:**  
+  * **Day 11-13 (Mathematica Deep Dive):** Refresh foundational math concepts (Linear Algebra, Calculus, Probability) using Wolfram Mathematica.\[17, 18\] Create dedicated notebooks and export key visualizations and formulas as images to be embedded in new chapters of your mdBook.  
+  * **Day 14 (Docker & Containerization):** Create a standardized Dockerfile for a data science container (Python, common libraries, PyTorch) to ensure all future projects are reproducible.  
+  * **Day 15 (Advanced Git):** Master advanced Git workflows essential for open-source collaboration: interactive rebasing, cherry-picking, submodules, and conventional commit messages.  
+* **Deliverable:** New mdBook chapters documenting refreshed mathematical knowledge; a reusable Docker image for ML projects; and demonstrated proficiency in advanced Git workflows.
+
+### **Modules 16-20: Establishing the Content & Networking Foundation**
+
+* **Tasks:**  
+  * **Day 16 (Technical Blog Setup):** Your mdBook project *is* your technical blog. Configure a GitHub Actions workflow to automatically build and deploy your mdBook to GitHub Pages on every push to the main branch. This creates a seamless "write, commit, publish" workflow.  
+  * **Day 17 (LinkedIn & Professional Framing):** Revamp your LinkedIn profile to align with the "Practitioner-Scholar" persona, framing your career as a narrative. Publish a short article announcing the 100-day learning journey and linking to your newly deployed mdBook.  
+  * **Day 18 (Identifying Communities):** Research and identify 3-5 high-signal online communities (subreddits, Discord servers, etc.). Join and observe the culture before participating.  
+  * **Day 19 (Crafting a Mentorship Strategy):** Develop a dual-pronged mentorship plan: identify 3-5 potential mentors to learn from, and outline a plan for mentoring others based on your extensive experience.  
+  * **Day 20 (Phase 1 Review & Planning):** Conduct a formal review of the first 20 modules. Write a new chapter in your mdBook evaluating the system's architecture. Create a detailed plan for Phase 2, outlining the specific technology domains for deep dives and project objectives.  
+* **Deliverable:** A live technical book deployed via GitHub Pages; a professionally framed LinkedIn profile; a curated list of target communities; a formal mentorship strategy chapter; and a detailed, actionable plan for Phase 2\.
 
 ---
 
-## **Phase IV: Hyper-Automation and Advanced Workflows (Modules 61-80)**
+## **Phase 2: Horizon Scanning & Deep Learning (Modules 21-50)**
 
-*Focus: Creating proactive, fully automated pipelines that require minimal manual intervention. This phase builds the "intelligent nervous system" of the PKM.*
+**Objective:** To systematically explore and gain hands-on proficiency in a curated set of emerging technologies. This phase emphasizes active, project-based learning over passive consumption, with a core tenet of embracing rapid failure as a learning mechanism. Each module is designed to produce a tangible artifact—a piece of code, a trained model, a working demo—which serves as both a learning tool and a potential portfolio piece, thereby fueling the PKES flywheel.
 
-### **Modules 61-70: Advanced GitHub Actions Workflows**
+### **Sub-theme: Generative AI & LLMs (Modules 21-30)**
 
-This section focuses on creating a sophisticated, multi-stage GitHub Action that fully automates the process of content enrichment, connecting the file system, Python scripts, AI models, and the deployment pipeline.
+This sub-theme focuses on building practical skills in the dominant technology trend of the 2020s. The projects move from foundational theory to building and deploying sophisticated AI applications.29
 
-61. **Designing the "Content Enrichment" Workflow:** A new, more advanced GitHub Actions workflow will be designed. The goal is to create a system that automatically processes a new note, enriches it with AI-generated content, and deploys the result without any manual steps.  
-62. **Triggering Workflows with Path Filters and Tags:** The workflow will be configured to trigger conditionally. It will run on pushes to the main branch but only when files in the /notes directory are modified. A convention will be established where adding a specific tag, like \#summarize, to a note's frontmatter signals the workflow to process that specific file.  
-63. **Workflow Step: Identifying Target Files:** The first step in the Action's job will be to identify which files have been changed in the latest commit and need processing. A simple shell script or a dedicated GitHub Action can be used to get the list of modified files.  
-64. **Workflow Step: Running the AI Python Script:** The workflow will then set up the Python environment and run the AIManager script developed in Phase III. The script will be called with the path to the modified file as an argument.  
-65. **Workflow Step: Committing Changes Back to the Repository:** After the Python script runs and modifies the note file (e.g., by adding a summary), the GitHub Action must commit this change back to the repository. This requires configuring Git within the action, setting a user and email, and using git commit and git push. A special commit message like "chore(AI): Add summary to \[filename\]" will be used to denote automated changes.  
-66. **Handling Recursive Workflow Triggers:** A critical challenge in this setup is that the workflow pushes a commit, which would normally trigger the workflow again, creating an infinite loop. This will be prevented by adding a condition to the commit step or the workflow trigger to ignore commits made by the Actions bot itself (e.g., by checking the commit message).  
-67. **Chaining Workflows:** Instead of putting everything in one massive file, the content enrichment workflow will be configured to trigger the existing mdBook deployment workflow upon its successful completion. This can be done using the workflow\_run event or by using a reusable "callable" workflow, which is a more modern approach.  
-68. **Adding an Issue Commenting Step:** To provide feedback, a final step will be added to the workflow. Using an action like peter-evans/create-or-update-comment, the workflow will find the corresponding GitHub Issue for the topic and post a comment indicating that the note has been automatically updated and a new version has been deployed, including a link to the published page.  
-69. **Full End-to-End Test:** A full test of the pipeline will be conducted. A new note will be created locally, tagged for summarization, and pushed to GitHub. The process will be monitored in the GitHub Actions tab, from the initial trigger to the AI processing, the commit back, the mdBook deployment, and the final comment on the issue.  
-70. **Refactoring for Reusability:** The workflow will be refactored to make it more modular. The Python script execution and the mdBook deployment steps will be broken into separate, reusable composite actions or callable workflows, making the main workflow file cleaner and easier to maintain.7
+* **Module 21: Refresher: Linear Algebra with Mathematica:** Revisit the Mathematica notebooks from Day 11\. Focus specifically on the concepts underpinning transformer architectures: vector spaces, dot products (as a measure of similarity), matrix multiplication, and Singular Value Decomposition (SVD). Implement a simple attention mechanism calculation in a notebook to solidify the mathematical intuition.17  
+* **Module 22: Building a RAG Application with LlamaIndex:** Follow a tutorial to build a complete Retrieval-Augmented Generation (RAG) application.32 Use a personal dataset, such as a collection of past technical reports, articles, or even the notes from this 100-day plan. The goal is to create a question-answering system over this private data. Deploy it locally using a simple FastAPI wrapper. This project provides immediate personal utility and a powerful demonstration of context-augmented LLMs.34  
+* **Module 23: Fine-Tuning a Foundational Model:** Gain hands-on experience with model customization. Using a framework like Hugging Face's transformers library and a platform with free GPU access like Google Colab, fine-tune a small, open-source LLM (e.g., a member of the Llama 3 or Mistral family) on a specific, narrow task.35 A practical project is to create a dataset of your own commit messages from a key project and fine-tune the model to generate new commit messages in your personal style. This demonstrates an understanding of the full training and tuning loop.37  
+* **Module 24: Building an AI Agent with LangChain:** Construct a basic autonomous agent that can reason and use tools. Using LangChain or LangGraph, define two tools: a search tool (e.g., Tavily Search) and a code execution tool (e.g., a Python REPL). Create an agent that can answer a question like, "What is the current price of Apple stock and what is its P/E ratio?" by first searching for the price and then using the REPL to calculate the ratio. This project demonstrates the core concepts of agentic workflows.38  
+* **Module 25: Exploring Generative AI in the SDLC:** Dedicate a full day to integrating Generative AI into a typical software development workflow. Select an AI-native code editor like Cursor or use GitHub Copilot extensively within your preferred IDE.41 Take on a small coding task (e.g., building a simple web app) and use the AI assistant for every stage: generating boilerplate, writing functions, creating unit tests, explaining unfamiliar code, and writing documentation. Meticulously document the experience in your PKES, noting productivity changes, quality of generated code, and points of friction. This provides a first-hand, critical evaluation of how GenAI is transforming the development lifecycle.43  
+* **Modules 26-30: Project: Build an "AI Research Analyst" Agent:** Synthesize the skills from this sub-theme into a multi-day project. Build an autonomous agent that fully automates the workflow designed in Modules 7-10. The agent's task, triggered daily, is to: 1\) Fetch new papers from your arXiv feed. 2\) For each paper, decide if it's relevant based on a set of criteria. 3\) If relevant, summarize the paper using the LLM tool. 4\) Check Papers With Code for an associated implementation. 5\) Compile the findings into a structured daily brief in Markdown format. 6\) Push the Markdown file to a dedicated GitHub repository that powers a section of your technical blog.
 
-### **Modules 71-75: Local LLMs with Ollama**
+### **Sub-theme: Modern Data Engineering (Modules 31-35)**
 
-This section introduces local large language models using Ollama, adding a powerful, private, and cost-effective tier to the AI strategy.35
+This sub-theme addresses the shift in data architecture, moving beyond monolithic data warehouses to more flexible, scalable, and decentralized paradigms. For a senior engineer, understanding these system-level trends is crucial.46
 
-71. **Installing and Configuring Ollama:** Ollama will be installed on the local machine. The command-line interface will be used to pull down a versatile, medium-sized model like Llama 3 (ollama pull llama3) or a smaller, efficient model like Phi-2 (ollama pull phi-2).35  
-72. **Interacting with Local Models via CLI and API:** The first interactions will be through the command line using ollama run llama3. This provides a feel for the model's performance and personality. Subsequently, the Ollama REST API, which runs locally on port 11434, will be explored. A tool like curl or Postman will be used to send requests to the API, demonstrating how to interact with the local model programmatically.36  
-73. **Creating a Custom Model with a Modelfile:** To tailor a model for specific PKM tasks, a Modelfile will be created.37 This file defines a custom model based on a parent model (e.g.,  
-    FROM llama3). It will include a SYSTEM prompt to give the model a specific persona, such as a "Socratic Inquisitor" whose role is to respond to any text by generating three probing questions to deepen understanding. Parameters like temperature can also be set to control creativity.38  
-74. **Building and Running the Custom Model:** The ollama create command will be used to build the custom model from the Modelfile, giving it a unique name (e.g., socratic-inquisitor). This new model will then be available to run via ollama run socratic-inquisitor and through the API.37  
-75. **Integrating Ollama into the Python AI Toolkit:** The AIManager Python module will be updated to include Ollama as a new AI provider. A new function will be added that makes API calls to the local Ollama server. The routing logic will be updated to use the local model for specific tasks, such as brainstorming or generating questions, officially adding the "Tier 1 (Local)" capability to the system.36
+* **Module 31: End-to-End MLOps with MLflow:** Go beyond a simple model.fit() call and embrace the discipline of MLOps. Using a classic dataset like the UCI Wine Quality dataset, train a scikit-learn model, but with a focus on the operational aspects.47 Set up a local MLflow tracking server. In your training script, log hyperparameters, evaluation metrics (e.g., RMSE, MAE), and the trained model itself as an artifact. Use the MLflow UI to compare several runs with different hyperparameters. Finally, register the best-performing model in the MLflow Model Registry, promoting it to a "Staging" or "Production" tag. This project covers the core lifecycle of a managed ML model.48  
+* **Module 32: Data Mesh Proof-of-Concept:** Build a small-scale simulation of a data mesh architecture to understand its core principles. Create two separate Python scripts or services. The first, the "Users Domain," generates mock user data and exposes it via a simple API as a "data product." The second, the "Orders Domain," does the same for mock order data. Create a third "Analytics" service that acts as a data consumer, pulling data from both domain APIs to answer a business question (e.g., "What is the average order value for users in California?"). This hands-on exercise demonstrates the principles of decentralized data ownership and data-as-a-product, contrasting it with a centralized data warehouse approach.52  
+* **Modules 33-35: Project: Real-Time Data Processing Pipeline (Comparative Study):** Build a small but complete real-time data pipeline. Use a public streaming data source. The core task is to implement a simple consumer and transformation process twice, first using a traditional message queue like **Apache Kafka** and then using a unified processing framework like **Apache Beam**.83 Document the architectural differences, development overhead, and performance trade-offs in your PKES. This comparative approach deepens understanding beyond a single tool.
 
-### **Modules 76-80: Containerization with Docker**
+### **Sub-theme: The Next Frontiers (Modules 36-45)**
 
-To ensure the PKM system's environment is consistent, portable, and reproducible, this section introduces containerization using Docker. This brings professional DevOps practices to the personal project.
+This section focuses on gaining conceptual and practical fluency in technologies that represent significant long-term shifts in computing.55 The objective is not mastery but the ability to understand the fundamentals and identify potential future applications.
 
-76. **Introduction to Docker Concepts:** The core concepts of Docker will be reviewed: images, containers, Dockerfiles, and volumes. The benefits of containerization for creating isolated and predictable environments will be discussed.  
-77. **Running Ollama in a Docker Container:** As a first practical step, instead of running Ollama directly on the host machine, it will be run inside a Docker container using the official ollama/ollama image.35 This involves running the container, mapping the necessary ports, and using a volume to persist the downloaded models, ensuring they are not lost when the container stops.  
-78. Writing a Dockerfile for the Python Scripts: A Dockerfile will be written for the PKM's Python automation tools. This file will define a custom image that:  
-    a. Starts from a base Python image.  
-    b. Copies the requirements.txt file and installs the dependencies.  
-    c. Copies the /scripts directory into the image.  
-    d. Sets up any necessary environment variables.  
-79. **Building and Running the Custom Python Container:** The docker build command will be used to create an image from the Dockerfile. Then, docker run will be used to start a container from this image and execute one of the automation scripts, demonstrating that the entire toolchain can run in a self-contained environment.  
-80. **Exploring Other Self-Hosted PKM Tools:** Docker makes it easy to experiment with other open-source tools. This module involves exploring the Docker images for other self-hosted PKM platforms like Memos or Siyuan.39 By running these tools locally in containers, new ideas and features can be discovered and potentially incorporated into the custom PKM system, all without polluting the host machine with new dependencies.
+* **Module 36: Quantum Computing Fundamentals (Comparative Study):** Demystify the core concepts of quantum computation. Using IBM's **Qiskit** open-source framework, implement a simple algorithm like creating an entangled Bell state.56 Then, repeat the same exercise using Google's  
+  **Cirq** framework.86 Document the differences in syntax, circuit construction, and overall developer experience. This provides a concrete understanding of concepts like superposition and entanglement from the perspective of two major ecosystems.58  
+* **Modules 37-38: Neuromorphic & Brain-Computer Interfaces:** Shift focus from quantum to another frontier: brain-inspired computing.  
+  * **Day 37 (Neuromorphic Concepts):** Research the principles of neuromorphic computing and spiking neural networks (SNNs). Investigate current hardware like Innatera's Pulsar and IBM's NorthPole.89 Create a detailed summary in your PKES comparing the architecture of these chips to traditional von Neumann architectures.  
+  * **Day 38 (BCI Exploration):** Explore the open-source Brain-Computer Interface (BCI) landscape. Research the hardware and software stacks of **OpenBCI** 91 and commercial platforms like  
+    **Emotiv**.94 The goal is to understand the types of data (EEG, EMG) they capture and the kinds of projects the communities are building.  
+* **Modules 39-40: AR/VR for Education & Training:** Replace the Web3 focus with an exploration of immersive technologies for learning, aligning with interests in simulation and education.  
+  * **Day 39 (Intro to WebXR):** Set up a basic development environment for WebXR. Work through a "Hello, World" tutorial to render a simple 3D object in a browser that can be viewed in VR or AR on a compatible device. This provides a low-barrier entry into immersive development.97  
+  * **Day 40 (Educational AR/VR Prototype):** Brainstorm and create a simple proof-of-concept for an educational AR/VR experience. For example, an AR app that displays a 3D model of a molecule when the phone camera is pointed at a marker, or a simple VR scene that visualizes a mathematical concept. The focus is on rapid prototyping, not a polished application.99  
+* **Modules 41-45: Project: Advanced Frontier Exploration:** Select one of the frontier topics (Generative AI, BCI, or AR/VR) and build a more in-depth project.  
+  * **AI Option:** Build and deploy a multi-modal application (e.g., an image captioning model) to a Hugging Face Space, making it publicly accessible.  
+  * **BCI Option:** Download a public EEG dataset and use Python libraries to perform basic signal processing and visualization, attempting to identify simple patterns (e.g., eye blinks).  
+  * **AR/VR Option:** Expand the educational prototype from Day 40, adding more interactivity or information overlays to create a more comprehensive learning module.
+
+### **Sub-theme: Review & Synthesis (Modules 46-50)**
+
+### **Sub-theme: Review & Synthesis (Modules 46-50)**
+
+* **Tasks:** This process is now even more natural with mdBook. For each major technology explored, create a main chapter that serves as a "Map of Content" (MOC), linking to all the sub-pages (project notes, tutorials, etc.) you've written on the topic. This makes your book's structure itself a tool for synthesis.  
+* **Deliverable:** A set of highly organized, interconnected chapters within your mdBook. This transforms the raw learning experience into a structured, searchable, and reusable knowledge asset.
+
 
 ---
 
-## **Phase V: Frontier Exploration and Custom Tooling (Modules 81-100)**
+## **Phase 3: Creation & Contribution (Modules 51-80)**
 
-*Focus: Pushing the boundaries of PKM by building high-performance, custom components and exploring next-generation AI platforms.*
+**Objective:** To transition from internal learning to external creation and contribution. This phase is dedicated to applying the skills and knowledge from Phase 2 to produce public artifacts and make meaningful contributions to the open-source ecosystem. This directly addresses the core goals of becoming "more useful" and "discoverable" by demonstrating expertise through tangible work. The "fail fast, learn faster" philosophy is critical here; the goal is to ship, gather feedback, and iterate.
 
-### **Modules 81-90: High-Performance PKM with Rust**
+### **Sub-theme: Finding Your Niche (Modules 51-55)**
 
-This section directly addresses the "impedance mismatch" problem identified in Phase I by building a custom, high-performance command-line utility in Rust. This provides a tangible, valuable project that motivates learning a new, more complex language and demonstrates a clear progression in technical capability.
+The approach for a senior engineer should be strategic, focusing on building relationships and making impactful contributions rather than simply collecting commits. This requires careful selection of a project and a gradual, respectful entry into its community.27
 
-81. **Setting up the Rust Development Environment:** The Rust toolchain, including rustup and cargo, will be installed. A new binary crate will be created using cargo new foam-link-converter. The basics of the Rust language will be explored, focusing on concepts relevant to this project: file system operations, string manipulation, and error handling.  
-82. Designing the Link Conversion Utility: The command-line tool's logic will be designed. It will need to:  
-    a. Accept a directory path as a command-line argument.  
-    b. Recursively walk through the directory to find all .md files.  
-    c. For each file, read its content into a string.  
-    d. Use regular expressions to find all instances of Foam's \[\[wikilink\]\] syntax.  
-    e. For each found wikilink, determine the correct relative path to the target file.  
-    f. Replace the \[\[wikilink\]\] with a standard Markdown link (\[wikilink\](./path/to/file.md)).  
-    g. Write the modified content back to the file.  
-83. **Implementing File System Traversal in Rust:** The first part of the implementation will focus on safely and efficiently traversing the notes directory. Rust libraries like walkdir will be used for this purpose.  
-84. **Parsing and Replacing Links with Regex:** Rust's powerful regex crate will be used to implement the core link-finding and replacement logic. This module will focus on crafting a robust regular expression that can handle simple links, aliases, and section links.  
-85. **Handling Edge Cases and Path Logic:** A simple replacement is not enough. The tool must be intelligent. For a link like \[\[my-note\]\], the tool needs to find the file my-note.md within the directory structure and calculate the correct relative path from the source file to the target file. This involves path manipulation using Rust's standard library.  
-86. **Compiling for Performance:** The Rust code will be compiled in release mode (cargo build \--release). The performance of this compiled binary will be compared to a hypothetical Python script performing the same task, highlighting the significant speed advantage of a compiled language like Rust for I/O- and CPU-intensive tasks. This provides a concrete demonstration of moving up the "performance ladder" from interpreted to compiled languages.  
-87. **Integrating the Rust Tool into the GitHub Action:** The compiled binary will be checked into the repository or built as part of the CI process. The main GitHub Actions workflow will be modified to run this custom utility as a build step before mdbook build is called. This completely automates the solution to the wikilink problem.  
-88. **Exploring Other Rust-Based PKM Tools:** To gain further inspiration from the Rust ecosystem, notable open-source PKM tools written in Rust, such as AppFlowy and Joplin, will be reviewed.41 Examining their architecture and feature sets can provide ideas for future enhancements to the custom system.  
-89. **Publishing the Crate (Optional):** As an extension, the foam-link-converter utility can be published to crates.io, Rust's public package registry. This provides experience with the full lifecycle of creating and sharing an open-source tool.  
-90. **Finalizing the Automated Linking Workflow:** The end-to-end workflow is now complete. A user can write notes in VSCode using fluid \[\[wikilinks\]\], push the changes to GitHub, and the automated pipeline will use a custom-built, high-performance Rust utility to seamlessly convert the links for publication with mdBook. This represents a significant engineering achievement within the PKM project.
+* **Module 51: Open Source Contribution Strategy:** Identify 3-5 open-source projects that are personally or professionally relevant. These should be tools used daily or libraries central to the technologies explored in Phase 2 (e.g., LangChain, LlamaIndex, MLflow, dbt). For each candidate project, conduct a thorough investigation. Read the CONTRIBUTING.md file, join their primary communication channels (Discord, Slack, mailing list), and observe the dynamics of the community. Analyze the project's governance model to understand how decisions are made and who the key maintainers are.24  
+* **Module 52: Identifying "Good First Issues":** Use platforms like goodfirstissue.dev and forgoodfirstissue.github.io or search directly on GitHub for labels like good first issue, help wanted, or beginner-friendly within the target projects.62 The purpose of this exercise is not necessarily to solve these issues, but to analyze them. This provides insight into the project's backlog, the types of tasks available for new contributors, and the clarity of their issue tracking.  
+* **Module 53: Beyond "Good First Issues" \- The User-Contributor Path:** For an experienced developer, a more impactful entry point is often to solve a problem they have personally encountered while using the software. Spend the day using one of the target projects intensively. Identify a bug, a gap in the documentation, or a minor feature that would improve the user experience. Create a detailed, reproducible issue report on GitHub. This approach leads to authentic contributions that are highly valued by maintainers.  
+* **Module 54: Your First Non-Code Contribution:** Make a contribution that builds social capital within the community. Options include: thoroughly improving a section of the official documentation that was confusing, providing a detailed and helpful answer to another user's question in the project's Discord or forum, or taking an existing bug report and adding more detail, such as a minimal reproducible example or root cause analysis. This demonstrates commitment and an understanding of the project without requiring a code change.  
+* **Module 55: Your First Code Contribution:** Select a small, well-defined issue—ideally the one identified in Module 53\. Follow the project's contribution workflow precisely: fork the repository, create a new branch, make the code changes, add or update tests, and submit a pull request.66 The pull request description should be clear, linking to the original issue and explaining the change and its justification. Be prepared to engage constructively with feedback from maintainers.
 
-### **Modules 91-95: Exploring the Modular Platform (Mojo & MAX)**
+### **Sub-theme: The Creator Track \- Technical Content (Modules 56-65)**
 
-This section ventures into the cutting edge of AI infrastructure, exploring the Modular Platform to understand how to achieve state-of-the-art performance for AI tasks.42
+This sub-theme focuses on leveraging the user's deep experience to teach others, which is a powerful method for solidifying knowledge and building a professional reputation.68
 
-91. **Introduction to Modular, Mojo, and MAX:** The Modular ecosystem will be introduced. Mojo is a programming language that combines the usability of Python with the performance of C and Rust, designed specifically for AI developers.43 MAX is Modular's suite of AI libraries and tools for high-performance inference.45  
-92. **Installing the Modular SDK:** The Modular SDK will be installed, providing access to the Mojo compiler and MAX tools. The native VSCode extension for Mojo will also be installed to get syntax highlighting and language support.42  
-93. **Writing "Hello World" in Mojo:** The first Mojo program will be written and compiled. This will introduce Mojo's syntax, which is a superset of Python, and concepts like strong typing with var and fn for function definitions.44  
-94. **Running a Pre-Optimized Model with MAX Serving:** The power of the MAX platform will be demonstrated by running a pre-optimized model from the Modular model repository. Using the max serve command, an OpenAI-compatible API endpoint will be started locally, serving a model like Llama 3\.45 The performance (tokens per second) of this endpoint will be observed and compared to other inference methods, showcasing the benefits of Modular's optimizations.43  
-95. **Experimenting with a Mojo Script:** A simple Mojo script will be written to interact with the MAX-served model. This provides a glimpse into how Mojo can be used to write the high-performance "glue code" for AI applications, bridging the gap between Python's ease of use and the need for speed in production AI systems.43
+* **Modules 56-58: Writing Your First Technical Tutorial:** Select one of the hands-on projects from Phase 2 (e.g., "Building a RAG Application with LlamaIndex") and transform the project notes from your PKES into a comprehensive, step-by-step tutorial. The structure should follow best practices: start by explaining the "why" and showing the final result, then walk through the process with clear code snippets and explanations.70 Publish the final article on the technical blog established in Phase 1\.  
+* **Modules 59-60: Promoting Your Content:** Actively distribute the published tutorial. Share a link on LinkedIn with a summary of what readers will learn. Post it to relevant subreddits or forums, being mindful of community rules on self-promotion. The key is to frame the post as a helpful resource, not an advertisement. Monitor these channels and engage thoughtfully with all comments and questions.  
+* **Modules 61-65: Creating a Video Tutorial:** Repurpose the written tutorial into a video format to reach a different audience.  
+  * **Day 61:** Write a concise script based on the blog post.  
+  * **Day 62:** Prepare the coding environment for recording (e.g., increase font size, clean up the desktop). Record the screen and audio, walking through the project step-by-step.73  
+  * **Day 63-64:** Perform basic video editing (e.g., using DaVinci Resolve or Descript) to remove mistakes and add simple titles or callouts.  
+  * **Day 65:** Upload the video to YouTube, with a clear title, detailed description, and a link back to the original blog post.
 
-### **Modules 96-100: Capstone Project \- The "Topic Delver" Agent**
+### **Sub-theme: The Builder Track \- Capstone Project (Modules 66-80)**
 
-This final project synthesizes all the skills and components developed over the previous 95 days into a single, powerful, and fully automated "agent" that actively assists in the knowledge exploration process.
+This three-week block is dedicated to building a single, more substantial project that synthesizes skills from multiple modules and serves as a significant portfolio piece.
 
-96. **Designing the "Topic Delver" Agent Workflow:** A master GitHub Action will be designed. This workflow will trigger when a GitHub Issue on the "Topic Exploration" project board is moved into the "Researching" column. This project management action becomes the starting signal for the automated agent.1  
-97. **Step 1: Initial Information Gathering (Python \+ OpenRouter):** The workflow will trigger a Python script. This script will take the title of the GitHub Issue as input. It will use the OpenRouter API to query a powerful model, instructing it to perform a simulated web search to find 3-5 key articles, videos, or papers related to the topic.23  
-98. **Step 2: Generating Foundational Questions (Python \+ Ollama):** The script will then take the gathered resources and the issue summary and pass them to the custom "socratic-inquisitor" model running locally via Ollama. The model's task is to generate a list of 5-10 foundational questions that should be answered to gain a deep understanding of the topic.35  
-99. **Step 3: Creating the "Topic Hub" Note:** The Python script will then create a new Markdown file in the /notes directory. The filename will be based on the issue title. This file will be pre-populated using a template that includes the list of resources gathered by OpenRouter and the foundational questions generated by Ollama.  
-100. **Step 4: Finalizing and Notifying (Rust, mdBook, GitHub API):** The workflow will then execute the custom Rust foam-link-converter utility to ensure all links are correct. It will commit the new note file to the repository, which in turn triggers the mdBook deployment workflow. As a final step, the workflow will use the GitHub API to post a comment back to the original Issue, stating: "The Topic Hub has been created. You can view the note here:," completing the automated loop from task management to knowledge creation. This capstone project exemplifies a truly AI-augmented PKM system, where the system itself becomes an active partner in the process of learning and exploration.
+* **Project Definition: Personalized arXiv Assistant:**  
+  * **Modules 66-70 (Data Ingestion & Processing):** Build a robust data pipeline that fetches daily papers from a custom arXiv RSS feed. The pipeline should parse the XML, extract metadata (title, authors, abstract), and store it in a local database (e.g., SQLite).  
+  * **Modules 71-73 (Custom Classification):** Use the skills from Module 23\. Create a small, labeled dataset by manually classifying 100-200 abstracts from your feed as "highly relevant," "somewhat relevant," or "not relevant." Fine-tune a small classification model (e.g., a BERT-based model) on this dataset. Integrate this model into your pipeline to automatically tag new papers.  
+  * **Modules 74-76 (Conversational Interface \- Comparative Study):** Build two prototype chat interfaces for the RAG system. First, use a rapid development framework like **Streamlit** or **Gradio** for quick iteration.101 Second, build a more performant, desktop-native prototype using a modern stack like  
+    **Tauri with a Rust backend and a Svelte frontend**.79 Document the trade-offs in development speed, performance, and complexity.  
+  * **Modules 77-80 (Deployment & Documentation):** Package the most promising prototype (or both) using the Docker skills from Module 14\. Deploy the containerized application as a Hugging Face Space, making it publicly accessible.13 Write a comprehensive  
+    README.md on GitHub for the project, explaining the architecture, setup instructions, and how to use the application.  
+* **Deliverable:** A publicly deployed, interactive AI application that solves a real personal problem and demonstrates expertise across the entire machine learning lifecycle, from data engineering to model fine-tuning and a comparative analysis of application deployment frameworks.
 
-#### **Works cited**
+---
 
-1. Automating Projects using Actions \- GitHub Docs, accessed September 1, 2025, [https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/automating-projects-using-actions](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/automating-projects-using-actions)  
-2. Planning and tracking with Projects \- GitHub Docs, accessed September 1, 2025, [https://docs.github.com/en/issues/planning-and-tracking-with-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects)  
-3. GitHub Issues · Project planning for developers, accessed September 1, 2025, [https://github.com/features/issues](https://github.com/features/issues)  
-4. Using GitHub issues to manage my tasks because I got tired of all the markdown files. : r/ClaudeAI \- Reddit, accessed September 1, 2025, [https://www.reddit.com/r/ClaudeAI/comments/1mozlq0/using\_github\_issues\_to\_manage\_my\_tasks\_because\_i/](https://www.reddit.com/r/ClaudeAI/comments/1mozlq0/using_github_issues_to_manage_my_tasks_because_i/)  
-5. About Projects \- GitHub Docs, accessed September 1, 2025, [https://docs.github.com/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects](https://docs.github.com/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)  
-6. kamranahmedse/developer-roadmap: Interactive roadmaps, guides and other educational content to help developers grow in their careers. \- GitHub, accessed September 1, 2025, [https://github.com/kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)  
-7. I saved 10+ of repetitive manual steps using just 4 GitHub Actions workflows \- Reddit, accessed September 1, 2025, [https://www.reddit.com/r/devops/comments/1jbajbr/i\_saved\_10\_of\_repetitive\_manual\_steps\_using\_just/](https://www.reddit.com/r/devops/comments/1jbajbr/i_saved_10_of_repetitive_manual_steps_using_just/)  
-8. A personal knowledge management and sharing system for VSCode \- Foam, accessed September 1, 2025, [https://foambubble.github.io/foam/](https://foambubble.github.io/foam/)  
-9. foambubble/foam: A personal knowledge management and sharing system for VSCode \- GitHub, accessed September 1, 2025, [https://github.com/foambubble/foam](https://github.com/foambubble/foam)  
-10. Foam \- Visual Studio Marketplace, accessed September 1, 2025, [https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode)  
-11. Recommended Extensions | Foam, accessed September 1, 2025, [https://foam-template-gatsby-kb.vercel.app/recommended-extensions](https://foam-template-gatsby-kb.vercel.app/recommended-extensions)  
-12. Recommended Extensions \- Foam, accessed September 1, 2025, [https://foambubble.github.io/foam/user/getting-started/recommended-extensions.html](https://foambubble.github.io/foam/user/getting-started/recommended-extensions.html)  
-13. Visual Studio Code Extensions \- thecrumb, accessed September 1, 2025, [https://www.thecrumb.com/posts/2022-12-21-my-vscode-extensions/](https://www.thecrumb.com/posts/2022-12-21-my-vscode-extensions/)  
-14. Introduction \- mdBook Documentation, accessed September 1, 2025, [https://rust-lang.github.io/mdBook/](https://rust-lang.github.io/mdBook/)  
-15. Renderers \- mdBook Documentation \- GitHub Pages, accessed September 1, 2025, [https://rust-lang.github.io/mdBook/format/configuration/renderers.html](https://rust-lang.github.io/mdBook/format/configuration/renderers.html)  
-16. Continuous Integration \- mdBook Documentation \- GitHub Pages, accessed September 1, 2025, [https://rust-lang.github.io/mdBook/continuous-integration.html](https://rust-lang.github.io/mdBook/continuous-integration.html)  
-17. Creating Your First CI/CD Pipeline Using GitHub Actions | by Brandon Kindred \- Medium, accessed September 1, 2025, [https://brandonkindred.medium.com/creating-your-first-ci-cd-pipeline-using-github-actions-81c668008582](https://brandonkindred.medium.com/creating-your-first-ci-cd-pipeline-using-github-actions-81c668008582)  
-18. peaceiris/actions-gh-pages: GitHub Actions for GitHub Pages Deploy static files and publish your site easily. Static-Site-Generators-friendly., accessed September 1, 2025, [https://github.com/peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)  
-19. Step by step to publish mdBook in gh-pages · Issue \#1803 \- GitHub, accessed September 1, 2025, [https://github.com/rust-lang/mdBook/issues/1803](https://github.com/rust-lang/mdBook/issues/1803)  
-20. How to build mdBook with Github Actions | by katopz | Medium \- Level Up Coding, accessed September 1, 2025, [https://levelup.gitconnected.com/how-to-build-mdbook-with-github-actions-eb9899e55d7e](https://levelup.gitconnected.com/how-to-build-mdbook-with-github-actions-eb9899e55d7e)  
-21. Beginner's Guide To Python Automation Scripts (With Code ..., accessed September 1, 2025, [https://zerotomastery.io/blog/python-automation-scripts-beginners-guide/](https://zerotomastery.io/blog/python-automation-scripts-beginners-guide/)  
-22. 19 Super-Useful Python Scripts to Automate Your Daily Tasks \- Index.dev, accessed September 1, 2025, [https://www.index.dev/blog/python-automation-scripts](https://www.index.dev/blog/python-automation-scripts)  
-23. OpenRouter: A unified interface for LLMs | by Dagang Wei | Medium, accessed September 1, 2025, [https://medium.com/@weidagang/openrouter-a-unified-interface-for-llms-eda4742a8aa4](https://medium.com/@weidagang/openrouter-a-unified-interface-for-llms-eda4742a8aa4)  
-24. Community Providers: OpenRouter \- AI SDK, accessed September 1, 2025, [https://ai-sdk.dev/providers/community-providers/openrouter](https://ai-sdk.dev/providers/community-providers/openrouter)  
-25. Models \- OpenRouter, accessed September 1, 2025, [https://openrouter.ai/models](https://openrouter.ai/models)  
-26. Google AI Studio | Gemini API | Google AI for Developers, accessed September 1, 2025, [https://ai.google.dev/aistudio](https://ai.google.dev/aistudio)  
-27. Google AI Studio, accessed September 1, 2025, [https://aistudio.google.com/](https://aistudio.google.com/)  
-28. Google AI Studio quickstart \- Gemini API, accessed September 1, 2025, [https://ai.google.dev/gemini-api/docs/ai-studio-quickstart](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart)  
-29. Google AI Studio for Beginners \- YouTube, accessed September 1, 2025, [https://www.youtube.com/watch?v=IHOJUJjZbzc](https://www.youtube.com/watch?v=IHOJUJjZbzc)  
-30. OpenRouter API Reference | Complete API Documentation ..., accessed September 1, 2025, [https://openrouter.ai/docs/api-reference/overview](https://openrouter.ai/docs/api-reference/overview)  
-31. Completion | OpenRouter | Documentation, accessed September 1, 2025, [https://openrouter.ai/docs/api-reference/completion](https://openrouter.ai/docs/api-reference/completion)  
-32. Summarizing Text Using Hugging Face's BART Model \- DEV Community, accessed September 1, 2025, [https://dev.to/dm8ry/summarizing-text-using-hugging-faces-bart-model-14p5](https://dev.to/dm8ry/summarizing-text-using-hugging-faces-bart-model-14p5)  
-33. How to Build A Text Summarizer Using Huggingface Transformers \- freeCodeCamp, accessed September 1, 2025, [https://www.freecodecamp.org/news/how-to-build-a-text-summarizer-using-huggingface-transformers/](https://www.freecodecamp.org/news/how-to-build-a-text-summarizer-using-huggingface-transformers/)  
-34. Pipelines \- Hugging Face, accessed September 1, 2025, [https://huggingface.co/docs/transformers/main\_classes/pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines)  
-35. How to Run LLMs Locally with Ollama \- Medium, accessed September 1, 2025, [https://medium.com/cyberark-engineering/how-to-run-llms-locally-with-ollama-cb00fa55d5de](https://medium.com/cyberark-engineering/how-to-run-llms-locally-with-ollama-cb00fa55d5de)  
-36. Running LLM Locally: A Beginner's Guide to Using Ollama | by Arun Patidar | Medium, accessed September 1, 2025, [https://medium.com/@arunpatidar26/running-llm-locally-a-beginners-guide-to-using-ollama-8ea296747505](https://medium.com/@arunpatidar26/running-llm-locally-a-beginners-guide-to-using-ollama-8ea296747505)  
-37. ollama/ollama: Get up and running with OpenAI gpt-oss ... \- GitHub, accessed September 1, 2025, [https://github.com/ollama/ollama](https://github.com/ollama/ollama)  
-38. Learn Ollama in 15 Minutes \- Run LLM Models Locally for FREE \- YouTube, accessed September 1, 2025, [https://www.youtube.com/watch?v=UtSSMs6ObqY](https://www.youtube.com/watch?v=UtSSMs6ObqY)  
-39. usememos/memos: A modern, open-source, self-hosted knowledge management and note-taking platform designed for privacy-conscious users and organizations. \- GitHub, accessed September 1, 2025, [https://github.com/usememos/memos](https://github.com/usememos/memos)  
-40. siyuan-note/siyuan: A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang. \- GitHub, accessed September 1, 2025, [https://github.com/siyuan-note/siyuan](https://github.com/siyuan-note/siyuan)  
-41. Best Open Source Personal Knowledge ... \- OpenAlternative, accessed September 1, 2025, [https://openalternative.co/categories/personal-knowledge-management-pkm/using/rust](https://openalternative.co/categories/personal-knowledge-management-pkm/using/rust)  
-42. Modular: A Fast, Scalable Gen AI Inference Platform, accessed September 1, 2025, [https://www.modular.com/](https://www.modular.com/)  
-43. Modular Documentation | Modular, accessed September 1, 2025, [https://docs.modular.com/](https://docs.modular.com/)  
-44. Get started with Mojo \- Modular docs, accessed September 1, 2025, [https://docs.modular.com/mojo/manual/get-started/](https://docs.modular.com/mojo/manual/get-started/)  
-45. The Modular Platform (includes MAX & Mojo) \- GitHub, accessed September 1, 2025, [https://github.com/modular/modular](https://github.com/modular/modular)
+## **Phase 4: Connection & Synthesis (Modules 81-100)**
+
+**Objective:** To actively leverage the knowledge base and artifacts created in the previous phases to build a professional network, establish a reputation for expertise, and synthesize 40 years of experience into high-value, shareable assets. The strategy shifts from building and learning to connecting and influencing, using the created work as the foundation for all interactions.
+
+### **Sub-theme: Strategic Networking & Friendship (Modules 81-90)**
+
+For a senior engineer, effective networking is not about volume but about the quality of connections. The goal is to build a network based on mutual respect and shared technical interests, allowing opportunities and new friendships to emerge organically.21
+
+* **Module 81: Activating Your Network:** Begin with existing connections. Share the capstone project from Phase 3 on LinkedIn, tagging any relevant technologies or companies. Send personalized messages to a select group of 5-10 trusted former colleagues, briefly explaining the project and asking for their expert feedback.  
+* **Module 82: Engaging in Communities:** Transition from passive observation to active participation in the online communities identified in Day 18\. The key is to lead with value. When someone asks a question that your capstone project or a tutorial can help answer, share your work as a resource. Participate in technical discussions, drawing upon the deep knowledge synthesized in your PKES.  
+* **Module 83: Conference & Meetup Strategy:** Identify one key virtual or in-person conference or a series of local meetups to attend. Before the event, study the speaker list and agenda. Identify 2-3 speakers or project maintainers with whom you want to connect. Prepare specific, insightful questions about their work that demonstrate you have engaged with it deeply. The goal is to have a memorable, substantive conversation, not just to exchange contact information.23  
+* **Module 84: The Art of the "Coffee Chat":** From the interactions in online communities or events, invite 2-3 people for a 30-minute virtual "coffee chat." The explicit goal of this meeting should be to learn about their work and interests. Be prepared with questions about their challenges, their perspective on industry trends, and their career journey. This approach, focused on genuine curiosity, is the most effective way to build lasting professional relationships and friendships.21  
+* **Modules 85-90: Project: Personal CRM Engineering with mdBook:** Systematize relationship management by building a tool directly into your publishing pipeline. The project is to design and build a custom **mdBook preprocessor in Rust**. This preprocessor will parse special syntax within your Markdown files (e.g., @\[Contact Name\](contact\_id)) and automatically generate a "Contacts" chapter, cross-linking individuals to the projects and ideas you've discussed with them. This is a perfect "closer-to-the-metal" project that enhances your core tool and directly serves the goal of fostering connections.
+
+
+### **Sub-theme: Opportunity Engineering (Modules 91-95)**
+
+* **Modules 91-93: Gig & Project Tracking System:** Build a tool to analyze the freelance and independent project market.  
+  * **Day 91 (API Exploration):** Research and get API keys for platforms like **Upwork** and **Freelancer.com**.106 Understand their data structures for job postings, required skills, and pricing.  
+  * **Day 92-93 (Dashboard Build):** Write a Python script to pull data from these APIs based on keywords relevant to your skills. Create a simple dashboard (using a tool of your choice from Module 74-76) to visualize trends in demand, popular technologies, and typical project rates.  
+* **Modules 94-95: Talent & Collaborator Discovery:** Extend the previous tool to identify potential collaborators. Write a script to scan GitHub or other platforms for developers contributing to open-source projects in your areas of interest. The goal is to build a system that helps you find interesting people to connect with for potential side hustles or independent projects.
+
+### **Sub-theme: Mentorship & Knowledge Synthesis (Modules 96-100)**
+
+This final sub-theme focuses on the highest-leverage activities: codifying and sharing the unique wisdom gained over a 40-year career to build community.
+
+* **Module 96: Becoming a Mentor:** Actively seek a mentorship opportunity. This could be through a formal platform like MentorCruise or CodePath, or informally within one of the open-source communities you have joined.75 Offering to guide a junior developer through their first open-source contribution is an excellent way to give back and solidify your own understanding.  
+* **Module 97: The "Brag Document" Synthesis Project:** Dedicate a focused effort to creating a comprehensive "Brag Document" as outlined by GitHub's career guides.10 This document is an internal-facing narrative of your entire career. Structure it by key projects or roles. For each, detail the business problem, the technical solution you engineered, the skills you applied, and—most importantly—the quantifiable business outcome.  
+* **Modules 98-99: Podcasting & Community Building:**  
+  * **Day 98 (Autodidactic Podcasting):** Plan a small, focused podcast or webcast series. The theme could be a "Technical Journal Club" where you and a guest discuss a recent arXiv paper. Outline the first 3-5 episodes. Research and set up a minimal audio recording/editing workflow.108 The goal is to learn the process through a hands-on, "Toastmasters" style of disciplined practice.  
+  * **Day 99 (Pilot Episode & Online Discussion Group):** Record a short pilot episode. Use this as a catalyst to start an online discussion group (e.g., on Discord or a dedicated forum) for people interested in discussing cutting-edge tech papers, creating a space for the friendships and connections you aim to foster.  
+* **Module 100: The 100-Day Review & The Next 100 Days:** Conduct a final, formal review of the entire 100-day journey. Use your PKES to write a detailed retrospective. Analyze the system you have built, the new skills you have acquired, the portfolio of artifacts you have created, and the new relationships you have formed. The ultimate measure of success for this curriculum is not its completion, but its continuation. Use the final day to leverage the full power of your new Personal Knowledge Engineering System to plan the *next* 100 days of learning, creating, and connecting.
+
+## **Conclusion**
+
+This 100-module curriculum provides a rigorous and systematic pathway for an experienced engineer to build a Personal Knowledge Engineering System centered on the principles of autodidacticism and community. By progressing through the four phases—Foundation, Learning, Creation, and Connection—the engineer will not only acquire skills in the most important modern technologies but will also construct a sustainable, integrated system for continuous professional growth and friendship. The emphasis on rapid, failure-tolerant experimentation, open-source contribution, and value-driven networking is designed to combat the sense of being overwhelmed by providing a clear, actionable framework. The final deliverable is more than a collection of notes and projects; it is a fully operational flywheel that transforms a lifetime of experience into a source of ongoing learning, discoverability, and meaningful connection within the global technology community.
+
+#### **Useful References**
+
+1. How to Increase Knowledge Productivity: Combine the Zettelkasten ..., accessed August 12, 2025, [https://zettelkasten.de/posts/building-a-second-brain-and-zettelkasten/](https://zettelkasten.de/posts/building-a-second-brain-and-zettelkasten/)  
+2. My Personal Knowledge Management System As a Software ..., accessed August 12, 2025, [https://thewordyhabitat.com/my-personal-knowledge-management-system/](https://thewordyhabitat.com/my-personal-knowledge-management-system/)  
+3. Personal Knowledge Management (PKM) \- Data Engineering Blog, accessed August 12, 2025, [https://www.ssp.sh/brain/personal-knowledge-management-pkm/](https://www.ssp.sh/brain/personal-knowledge-management-pkm/)  
+4. Combine Your Second Brain with Zettelkasten \- Sudo Science, accessed August 12, 2025, [https://sudoscience.blog/2024/12/27/combine-your-second-brain-with-zettelkasten/](https://sudoscience.blog/2024/12/27/combine-your-second-brain-with-zettelkasten/)  
+5. FOR COMPARISON with mdBook ... Obsidian \- Sharpen your thinking, accessed August 12, 2025, [https://obsidian.md/](https://obsidian.md/)  
+6. FOR COMPARISON with mdBook... Developers \- Obsidian Help, accessed August 12, 2025, [https://help.obsidian.md/developers](https://help.obsidian.md/developers)  
+7. FOR COMPARISON with mdBook ... Home \- Developer Documentation \- Obsidian, accessed August 12, 2025, [https://docs.obsidian.md/Home](https://docs.obsidian.md/Home)  
+8. Managing my personal knowledge base · tkainrad, accessed August 12, 2025, [https://tkainrad.dev/posts/managing-my-personal-knowledge-base/](https://tkainrad.dev/posts/managing-my-personal-knowledge-base/)  
+9. Engineering \- Notion, accessed August 12, 2025, [https://www.notion.com/help/guides/category/engineering](https://www.notion.com/help/guides/category/engineering)  
+10. Junior to senior: An action plan for engineering career success ..., accessed August 12, 2025, [https://github.com/readme/guides/engineering-career-success](https://github.com/readme/guides/engineering-career-success)  
+11. AswinBarath/AswinBarath: A quick bio about myself \- GitHub, accessed August 12, 2025, [https://github.com/AswinBarath/AswinBarath](https://github.com/AswinBarath/AswinBarath)  
+12. What Is Hugging Face? | Coursera, accessed August 12, 2025, [https://www.coursera.org/articles/what-is-hugging-face](https://www.coursera.org/articles/what-is-hugging-face)  
+13. Hugging Face : Revolutionizing AI Collaboration in the Machine Learning Community | by Yuvraj kakkar | Medium, accessed August 12, 2025, [https://medium.com/@yuvrajkakkar1/hugging-face-revolutionizing-ai-collaboration-in-the-machine-learning-community-28d9c6e94ddb](https://medium.com/@yuvrajkakkar1/hugging-face-revolutionizing-ai-collaboration-in-the-machine-learning-community-28d9c6e94ddb)  
+14. "Operator-Based Machine Intelligence: A Hilbert Space Framework ..., accessed August 12, 2025, [https://www.reddit.com/r/singularity/comments/1mkwxzk/operatorbased\_machine\_intelligence\_a\_hilbert/](https://www.reddit.com/r/singularity/comments/1mkwxzk/operatorbased_machine_intelligence_a_hilbert/)  
+15. \[2505.23723\] ML-Agent: Reinforcing LLM Agents for Autonomous Machine Learning Engineering \- arXiv, accessed August 12, 2025, [https://arxiv.org/abs/2505.23723](https://arxiv.org/abs/2505.23723)  
+16. Getting Started with Papers With Code – IT Exams Training ..., accessed August 12, 2025, [https://www.pass4sure.com/blog/getting-started-with-papers-with-code/](https://www.pass4sure.com/blog/getting-started-with-papers-with-code/)  
+17. Wolfram Mathematica: Modern Technical Computing, accessed August 12, 2025, [https://www.wolfram.com/mathematica/](https://www.wolfram.com/mathematica/)  
+18. Mathematica & Wolfram Language Tutorial: Fast Intro for Math Students, accessed August 12, 2025, [https://www.wolfram.com/language/fast-introduction-for-math-students/en/](https://www.wolfram.com/language/fast-introduction-for-math-students/en/)  
+19. How to start a tech blog in 6 steps \- Wix.com, accessed August 12, 2025, [https://www.wix.com/blog/how-to-start-a-tech-blog](https://www.wix.com/blog/how-to-start-a-tech-blog)  
+20. How to Start a Tech Blog: Easy Guide for Beginners \- WPZOOM, accessed August 12, 2025, [https://www.wpzoom.com/blog/how-to-start-tech-blog/](https://www.wpzoom.com/blog/how-to-start-tech-blog/)  
+21. Networking for Engineers: 8 Strategies to Expand Your Professional ..., accessed August 12, 2025, [https://staffing.trimech.com/networking-for-engineers-8-strategies-to-expand-your-professional-circle/](https://staffing.trimech.com/networking-for-engineers-8-strategies-to-expand-your-professional-circle/)  
+22. Mastering Networking as a Software Developer: Strategies for Success : r/software\_soloprenures \- Reddit, accessed August 12, 2025, [https://www.reddit.com/r/software\_soloprenures/comments/1m363gv/mastering\_networking\_as\_a\_software\_developer/](https://www.reddit.com/r/software_soloprenures/comments/1m363gv/mastering_networking_as_a_software_developer/)  
+23. The Software Developer's Guide to Networking \- Simple Programmer, accessed August 12, 2025, [https://simpleprogrammer.com/software-developers-networking/](https://simpleprogrammer.com/software-developers-networking/)  
+24. Participating in Open Source Communities \- Linux Foundation, accessed August 12, 2025, [https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities)  
+25. How To Grow Your Career With a Software Engineering Mentor \- Springboard, accessed August 12, 2025, [https://www.springboard.com/blog/software-engineering/software-engineer-mentor/](https://www.springboard.com/blog/software-engineering/software-engineer-mentor/)  
+26. Where to Find a Software Engineer Mentor (and How to Benefit From Them) | HackerNoon, accessed August 12, 2025, [https://hackernoon.com/where-to-find-a-software-engineer-mentor-and-how-to-benefit-from-them](https://hackernoon.com/where-to-find-a-software-engineer-mentor-and-how-to-benefit-from-them)  
+27. Improve your open source development impact | TODO Group // Talk ..., accessed August 12, 2025, [https://todogroup.org/resources/guides/improve-your-open-source-development-impact/](https://todogroup.org/resources/guides/improve-your-open-source-development-impact/)  
+28. Self-Directed Learning: A Four-Step Process | Centre for Teaching ..., accessed August 12, 2025, [https://uwaterloo.ca/centre-for-teaching-excellence/catalogs/tip-sheets/self-directed-learning-four-step-process](https://uwaterloo.ca/centre-for-teaching-excellence/catalogs/tip-sheets/self-directed-learning-four-step-process)  
+29. 25 New Technology Trends for 2025 \- Simplilearn.com, accessed August 12, 2025, [https://www.simplilearn.com/top-technology-trends-and-jobs-article](https://www.simplilearn.com/top-technology-trends-and-jobs-article)  
+30. Emerging Technology Trends \- J.P. Morgan, accessed August 12, 2025, [https://www.jpmorgan.com/content/dam/jpmorgan/documents/technology/jpmc-emerging-technology-trends-report.pdf](https://www.jpmorgan.com/content/dam/jpmorgan/documents/technology/jpmc-emerging-technology-trends-report.pdf)  
+31. 5 AI Trends Shaping Innovation and ROI in 2025 | Morgan Stanley, accessed August 12, 2025, [https://www.morganstanley.com/insights/articles/ai-trends-reasoning-frontier-models-2025-tmt](https://www.morganstanley.com/insights/articles/ai-trends-reasoning-frontier-models-2025-tmt)  
+32. Llamaindex RAG Tutorial | IBM, accessed August 12, 2025, [https://www.ibm.com/think/tutorials/llamaindex-rag](https://www.ibm.com/think/tutorials/llamaindex-rag)  
+33. Build Your First AI Application Using LlamaIndex\! \- DEV Community, accessed August 12, 2025, [https://dev.to/pavanbelagatti/build-your-first-ai-application-using-llamaindex-1f9](https://dev.to/pavanbelagatti/build-your-first-ai-application-using-llamaindex-1f9)  
+34. LlamaIndex \- LlamaIndex, accessed August 12, 2025, [https://docs.llamaindex.ai/](https://docs.llamaindex.ai/)  
+35. Fine-Tuning LLMs: A Guide With Examples | DataCamp, accessed August 12, 2025, [https://www.datacamp.com/tutorial/fine-tuning-large-language-models](https://www.datacamp.com/tutorial/fine-tuning-large-language-models)  
+36. The Ultimate Guide to LLM Fine Tuning: Best Practices & Tools \- Lakera AI, accessed August 12, 2025, [https://www.lakera.ai/blog/llm-fine-tuning-guide](https://www.lakera.ai/blog/llm-fine-tuning-guide)  
+37. Fine-tuning LLMs Guide | Unsloth Documentation, accessed August 12, 2025, [https://docs.unsloth.ai/get-started/fine-tuning-llms-guide](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide)  
+38. Building AI Agents Using LangChain and OpenAI APIs: A Step-by ..., accessed August 12, 2025, [https://sen-abby.medium.com/building-ai-agents-using-langchain-47ba4012a8a1](https://sen-abby.medium.com/building-ai-agents-using-langchain-47ba4012a8a1)  
+39. LangGraph \- LangChain, accessed August 12, 2025, [https://www.langchain.com/langgraph](https://www.langchain.com/langgraph)  
+40. Build an Agent \- ️ LangChain, accessed August 12, 2025, [https://python.langchain.com/docs/tutorials/agents/](https://python.langchain.com/docs/tutorials/agents/)  
+41. With AI at the core, Heizen has a new model for software development at scale, accessed August 12, 2025, [https://economictimes.indiatimes.com/small-biz/security-tech/technology/with-ai-at-the-core-heizen-has-a-new-model-for-software-development-at-scale/articleshow/123156453.cms](https://economictimes.indiatimes.com/small-biz/security-tech/technology/with-ai-at-the-core-heizen-has-a-new-model-for-software-development-at-scale/articleshow/123156453.cms)  
+42. 10 Best AI code generators in 2025 \[Free & Paid\] \- Pieces App, accessed August 12, 2025, [https://pieces.app/blog/9-best-ai-code-generation-tools](https://pieces.app/blog/9-best-ai-code-generation-tools)  
+43. Generative AI In Software Development Life Cycle (SDLC) \- V2Soft, accessed August 12, 2025, [https://www.v2soft.com/blogs/generative-ai-in-sdlc](https://www.v2soft.com/blogs/generative-ai-in-sdlc)  
+44. How an AI-enabled software product development life cycle will fuel innovation \- McKinsey, accessed August 12, 2025, [https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-an-ai-enabled-software-product-development-life-cycle-will-fuel-innovation](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-an-ai-enabled-software-product-development-life-cycle-will-fuel-innovation)  
+45. Generative AI in SDLC: Can GenAI Be Utilized throughout the Software Development Life Cycle? \- EPAM Startups & SMBs, accessed August 12, 2025, [https://startups.epam.com/blog/generative-ai-in-sdlc](https://startups.epam.com/blog/generative-ai-in-sdlc)  
+46. Future of Data Engineering: Trends for 2025 \- Closeloop Technologies, accessed August 12, 2025, [https://closeloop.com/blog/data-engineering-key-trends-to-watch/](https://closeloop.com/blog/data-engineering-key-trends-to-watch/)  
+47. Tutorial \- MLflow, accessed August 12, 2025, [https://www.mlflow.org/docs/2.7.1/tutorials-and-examples/tutorial.html](https://www.mlflow.org/docs/2.7.1/tutorials-and-examples/tutorial.html)  
+48. 10 MLOps Projects Ideas for Beginners to Practice in 2025 \- ProjectPro, accessed August 12, 2025, [https://www.projectpro.io/article/mlops-projects-ideas/486](https://www.projectpro.io/article/mlops-projects-ideas/486)  
+49. Tutorials and Examples \- MLflow, accessed August 12, 2025, [https://mlflow.org/docs/latest/ml/tutorials-and-examples/](https://mlflow.org/docs/latest/ml/tutorials-and-examples/)  
+50. Your First MLflow Model: Complete Tutorial, accessed August 12, 2025, [https://mlflow.org/docs/latest/ml/getting-started/logging-first-model/](https://mlflow.org/docs/latest/ml/getting-started/logging-first-model/)  
+51. End-to-End MLOps Pipeline: A Comprehensive Project ..., accessed August 12, 2025, [https://www.geeksforgeeks.org/machine-learning/end-to-end-mlops-pipeline-a-comprehensive-project/](https://www.geeksforgeeks.org/machine-learning/end-to-end-mlops-pipeline-a-comprehensive-project/)  
+52. Snowflake Data Mesh: The Ultimate Setup Guide (2025) \- Atlan, accessed August 12, 2025, [https://atlan.com/snowflake-data-mesh-how-to-guide/](https://atlan.com/snowflake-data-mesh-how-to-guide/)  
+53. What Is Data Mesh? Complete Tutorial \- Confluent Developer, accessed August 12, 2025, [https://developer.confluent.io/courses/data-mesh/intro/](https://developer.confluent.io/courses/data-mesh/intro/)  
+54. Data Mesh Implementation: Your Blueprint for a Successful Launch \- Ascend.io, accessed August 12, 2025, [https://www.ascend.io/blog/data-mesh-implementation-your-blueprint-for-a-successful-launch](https://www.ascend.io/blog/data-mesh-implementation-your-blueprint-for-a-successful-launch)  
+55. Ten More Top Emerging Technologies In 2025 \- Forrester, accessed August 12, 2025, [https://www.forrester.com/report/ten-more-top-emerging-technologies-in-2025/RES183100](https://www.forrester.com/report/ten-more-top-emerging-technologies-in-2025/RES183100)  
+56. What Is Quantum Computing? | IBM, accessed August 12, 2025, [https://www.ibm.com/think/topics/quantum-computing](https://www.ibm.com/think/topics/quantum-computing)  
+57. Introduction to Qiskit | IBM Quantum Documentation, accessed August 12, 2025, [https://quantum.cloud.ibm.com/docs/guides/](https://quantum.cloud.ibm.com/docs/guides/)  
+58. Quantum computing \- Wikipedia, accessed August 12, 2025, [https://en.wikipedia.org/wiki/Quantum\_computing](https://en.wikipedia.org/wiki/Quantum_computing)  
+59. Introduction to quantum computing, accessed August 12, 2025, [https://thequantuminsider.com/introduction-to-quantum-computing/](https://thequantuminsider.com/introduction-to-quantum-computing/)  
+60. Introduction to Qiskit | IBM Quantum Documentation, accessed August 12, 2025, [https://quantum.cloud.ibm.com/docs/guides](https://quantum.cloud.ibm.com/docs/guides)  
+61. How do people do Open Source Contributions ? : r/csharp \- Reddit, accessed August 12, 2025, [https://www.reddit.com/r/csharp/comments/1bxprbo/how\_do\_people\_do\_open\_source\_contributions/](https://www.reddit.com/r/csharp/comments/1bxprbo/how_do_people_do_open_source_contributions/)  
+62. Good First Issue: Make your first open-source contribution, accessed August 12, 2025, [https://goodfirstissue.dev/](https://goodfirstissue.dev/)  
+63. For Good First Issue | Make your next open-source contribution matter. \- GitHub, accessed August 12, 2025, [https://forgoodfirstissue.github.com/](https://forgoodfirstissue.github.com/)  
+64. MunGell/awesome-for-beginners: A list of awesome beginners-friendly projects. \- GitHub, accessed August 12, 2025, [https://github.com/MunGell/awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners)  
+65. For Good First Issue: Introducing a new way to contribute \- The GitHub Blog, accessed August 12, 2025, [https://github.blog/open-source/social-impact/for-good-first-issue-introducing-a-new-way-to-contribute/](https://github.blog/open-source/social-impact/for-good-first-issue-introducing-a-new-way-to-contribute/)  
+66. How to Contribute to Open Source, accessed August 12, 2025, [https://opensource.guide/how-to-contribute/](https://opensource.guide/how-to-contribute/)  
+67. Find Open Source Projects to Contribute: A Developer's Guide, accessed August 12, 2025, [https://osssoftware.org/blog/find-open-source-projects-to-contribute-a-developers-guide/](https://osssoftware.org/blog/find-open-source-projects-to-contribute-a-developers-guide/)  
+68. A Software Developer's Guide to Writing \- DEV Community, accessed August 12, 2025, [https://dev.to/tyaga001/a-software-developers-guide-to-writing-bgj](https://dev.to/tyaga001/a-software-developers-guide-to-writing-bgj)  
+69. Building an Online Presence In Tech 101 \- SheCanCode, accessed August 12, 2025, [https://shecancode.io/building-an-online-presence-in-tech-101/](https://shecancode.io/building-an-online-presence-in-tech-101/)  
+70. How to write a coding tutorial | Yost's Posts, accessed August 12, 2025, [https://www.ryanjyost.com/how-to-write-a-coding-tutorial/](https://www.ryanjyost.com/how-to-write-a-coding-tutorial/)  
+71. Creating the Best Video Programming Tutorials | Vue Mastery, accessed August 12, 2025, [https://www.vuemastery.com/blog/creating-the-best-video-programming-tutorials/](https://www.vuemastery.com/blog/creating-the-best-video-programming-tutorials/)  
+72. A tutorial on creating coding tutorials \- LogRocket Blog, accessed August 12, 2025, [https://blog.logrocket.com/a-tutorial-on-creating-front-end-tutorials-2b13d8e94df9/](https://blog.logrocket.com/a-tutorial-on-creating-front-end-tutorials-2b13d8e94df9/)  
+73. How to Create a Technical Video Tutorial | Elastic Blog, accessed August 12, 2025, [https://www.elastic.co/blog/elastic-contributor-program-how-to-create-a-video-tutorial](https://www.elastic.co/blog/elastic-contributor-program-how-to-create-a-video-tutorial)  
+74. How to Make Engaging Programming Videos \- Real Python, accessed August 12, 2025, [https://realpython.com/how-to-make-programming-videos/](https://realpython.com/how-to-make-programming-videos/)  
+75. One-on-one mentorship with software engineers \- CodePath, accessed August 12, 2025, [https://www.codepath.org/career-services/mentorship](https://www.codepath.org/career-services/mentorship)  
+76. Find a Software Engineering mentor \- MentorCruise, accessed August 12, 2025, [https://mentorcruise.com/filter/softwareengineering/](https://mentorcruise.com/filter/softwareengineering/)  
+77. Logseq vs. Obsidian: first impressions \- Share & showcase, accessed August 13, 2025, [https://forum.obsidian.md/t/logseq-vs-obsidian-first-impressions/56854](https://forum.obsidian.md/t/logseq-vs-obsidian-first-impressions/56854)  
+78. 6 ways Logseq is the perfect Obsidian alternative \- XDA Developers, accessed August 13, 2025, [https://www.xda-developers.com/ways-logseq-is-the-perfect-obsidian-alternative/](https://www.xda-developers.com/ways-logseq-is-the-perfect-obsidian-alternative/)  
+79. Electron vs Tauri \- Coditation, accessed August 13, 2025, [https://www.coditation.com/blog/electron-vs-tauri](https://www.coditation.com/blog/electron-vs-tauri)  
+80. Framework Wars: Tauri vs Electron vs Flutter vs React Native \- Moon Technolabs, accessed August 13, 2025, [https://www.moontechnolabs.com/blog/tauri-vs-electron-vs-flutter-vs-react-native/](https://www.moontechnolabs.com/blog/tauri-vs-electron-vs-flutter-vs-react-native/)  
+81. Modular: A Fast, Scalable Gen AI Inference Platform, accessed August 13, 2025, [https://www.modular.com/](https://www.modular.com/)  
+82. MAX: AI Compute Platform \- Modular, accessed August 13, 2025, [https://www.modular.com/max](https://www.modular.com/max)  
+83. apache beam vs apache kafka: Which Tool is Better for Your Next Project? \- ProjectPro, accessed August 13, 2025, [https://www.projectpro.io/compare/apache-beam-vs-apache-kafka](https://www.projectpro.io/compare/apache-beam-vs-apache-kafka)  
+84. Apache Beam over Apache Kafka Stream processing \- Codemia, accessed August 13, 2025, [https://codemia.io/knowledge-hub/path/apache\_beam\_over\_apache\_kafka\_stream\_processing](https://codemia.io/knowledge-hub/path/apache_beam_over_apache_kafka_stream_processing)  
+85. Apache Beam: Introduction to Batch and Stream Data Processing \- Confluent, accessed August 13, 2025, [https://www.confluent.io/learn/apache-beam/](https://www.confluent.io/learn/apache-beam/)  
+86. Quantum Programming Languages: A Beginner's Guide for 2025 \- BlueQubit, accessed August 13, 2025, [https://www.bluequbit.io/quantum-programming-languages](https://www.bluequbit.io/quantum-programming-languages)  
+87. What are the best-known quantum programming languages (e.g., Qiskit, Quipper, Cirq)?, accessed August 13, 2025, [https://milvus.io/ai-quick-reference/what-are-the-bestknown-quantum-programming-languages-eg-qiskit-quipper-cirq](https://milvus.io/ai-quick-reference/what-are-the-bestknown-quantum-programming-languages-eg-qiskit-quipper-cirq)  
+88. Hello Many Worlds in Seven Quantum Languages \- IonQ, accessed August 13, 2025, [https://ionq.com/docs/hello-many-worlds-seven-quantum-languages](https://ionq.com/docs/hello-many-worlds-seven-quantum-languages)  
+89. Neuromorphic Hardware Guide, accessed August 13, 2025, [https://open-neuromorphic.org/neuromorphic-computing/hardware/](https://open-neuromorphic.org/neuromorphic-computing/hardware/)  
+90. Embedded Neuromorphic Computing Systems \- MCSoC-2025, accessed August 13, 2025, [https://mcsoc-forum.org/site/index.php/embedded-neuromorphic-computing-systems/](https://mcsoc-forum.org/site/index.php/embedded-neuromorphic-computing-systems/)  
+91. OpenBCI – Open-source EEG, accessed August 13, 2025, [https://www.opensourceimaging.org/project/openbci/](https://www.opensourceimaging.org/project/openbci/)  
+92. Community Page Projects \- OpenBCI Documentation, accessed August 13, 2025, [https://docs.openbci.com/Examples/CommunityPageProjects/](https://docs.openbci.com/Examples/CommunityPageProjects/)  
+93. Example Projects \- OpenBCI Documentation, accessed August 13, 2025, [https://docs.openbci.com/Examples/ExamplesLanding/](https://docs.openbci.com/Examples/ExamplesLanding/)  
+94. EEG Headsets and Software for Education \- EMOTIV, accessed August 13, 2025, [https://www.emotiv.com/pages/education](https://www.emotiv.com/pages/education)  
+95. EEG Monitoring – EMOTIV, accessed August 13, 2025, [https://www.emotiv.com/blogs/glossary/eeg-monitoring](https://www.emotiv.com/blogs/glossary/eeg-monitoring)  
+96. EEG Headset \- Emotiv, accessed August 13, 2025, [https://www.emotiv.com/blogs/glossary/eeg-headset](https://www.emotiv.com/blogs/glossary/eeg-headset)  
+97. Developing AR/VR/MR/XR Apps with WebXR, Unity & Unreal \- Coursera, accessed August 13, 2025, [https://www.coursera.org/learn/develop-augmented-virtual-mixed-extended-reality-applications-webxr-unity-unreal](https://www.coursera.org/learn/develop-augmented-virtual-mixed-extended-reality-applications-webxr-unity-unreal)  
+98. WebXR Academy, accessed August 13, 2025, [https://webxracademy.com/](https://webxracademy.com/)  
+99. Top VR Education Companies in 2025 \- Axon Park, accessed August 13, 2025, [https://www.axonpark.com/top-vr-education-companies-in-2025/](https://www.axonpark.com/top-vr-education-companies-in-2025/)  
+100. The Future of VR in Education: Immersive Learning Experiences, accessed August 13, 2025, [https://www.immersivelearning.news/2025/06/19/the-future-of-vr-in-education-immersive-learning-experiences/](https://www.immersivelearning.news/2025/06/19/the-future-of-vr-in-education-immersive-learning-experiences/)  
+101. Streamlit vs FastAPI: Choosing the Right Tool for Deploying Your Machine Learning Model | by Pelumi Ogunlusi | Jul, 2025 | Medium, accessed August 13, 2025, [https://medium.com/@samuelogunlusi07/streamlit-vs-fastapi-choosing-the-right-tool-for-deploying-your-machine-learning-model-1d16d427e130](https://medium.com/@samuelogunlusi07/streamlit-vs-fastapi-choosing-the-right-tool-for-deploying-your-machine-learning-model-1d16d427e130)  
+102. Compare Streamlit vs. Tauri in 2025, accessed August 13, 2025, [https://slashdot.org/software/comparison/Streamlit-vs-Tauri/](https://slashdot.org/software/comparison/Streamlit-vs-Tauri/)  
+103. Monica: Personal CRM done right, accessed August 13, 2025, [https://www.monicahq.com/](https://www.monicahq.com/)  
+104. monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships. \- GitHub, accessed August 13, 2025, [https://github.com/monicahq/monica](https://github.com/monicahq/monica)  
+105. rust-lang/mdBook: Create book from markdown files. Like Gitbook but implemented in Rust, accessed August 13, 2025, [https://github.com/rust-lang/mdBook](https://github.com/rust-lang/mdBook)  
+106. Freelancer API for Developers, accessed August 13, 2025, [https://developers.freelancer.com/](https://developers.freelancer.com/)  
+107. API Developer Freelance Jobs: Work Remote & Earn Online \- Upwork, accessed August 13, 2025, [https://www.upwork.com/freelance-jobs/api-development/](https://www.upwork.com/freelance-jobs/api-development/)  
+108. How to Start a Podcast: Step-by-Step Guide & Free Checklist \- Riverside, accessed August 13, 2025, [https://riverside.com/blog/how-to-start-a-podcast](https://riverside.com/blog/how-to-start-a-podcast)
